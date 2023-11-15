@@ -95,7 +95,7 @@ section {
 }
 
 .curtain {
-  z-index: 99;
+  z-index: 50;
   width: 100%;
   min-height: 200vh;
   position: absolute;
@@ -111,6 +111,10 @@ section {
 
 .mask {
   overflow: hidden;
+}
+
+.block {
+  display: block;
 }
 
 .fav-container {
@@ -161,7 +165,29 @@ section {
   display: flex;
   align-items: center;
   padding: var(--ws-3) var(--ws-auto);
+  transition: .5s ease-in;
+  background-color: var(--clr-primary);
 }
+
+#header.sticky {
+  position: fixed;
+  transition: all .5s ease-in;
+  animation: fadeInDown .5s linear;
+  z-index: 90;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 .header-content {
   display: flex;
@@ -175,6 +201,8 @@ section {
   gap: var(--ws-1);
   flex-direction: column;
   position: relative;
+  cursor: pointer;
+  z-index: 999;
 }
 
 .change-location {
@@ -185,26 +213,36 @@ section {
   padding: var(--ws-4);
   border-radius: 0px 0px 32px 32px;
   background: #fff;
-  /* display: none; change on click */
+  transition: 0.5s;
 }
 
 .mobile-change-location, .change-location {
     display: none;
+    cursor: pointer;
 }
 
+.change-location.block, .mobile-change-location.block {
+  display: block;
+}
+
+.close-location, .mobile-close-location {
+  cursor: pointer;
+  width: fit-content;
+}
+
+
+
 @media screen and (max-width: 428px) {
-  .change-location {
-    display: none;
-  }
 
   .mobile-change-location {
-    position: absolute;
+    position: fixed;
     z-index: 999;
     top: calc(100vh - 406px);
     width: 100%;
     padding: var(--ws-4);
     border-radius: 32px 32px 0px 0px;
     background: #fff;
+    transition: 0.5s;
   }
 }
 
@@ -852,7 +890,7 @@ input[type="search"]:focus {
   }
 
   .fav-navigation {
-    display: none;
+    display: block;
   }
 
   .restaurant-div {
