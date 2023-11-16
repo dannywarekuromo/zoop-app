@@ -1,5 +1,6 @@
 /* general variables */
 const header = document.getElementById("header");
+const container = document.querySelector(".container");
 
 // location variables
 const headerAddress = document.querySelector(".header-address");
@@ -22,11 +23,13 @@ const stickynav = () => {
 
 window.addEventListener("scroll", stickynav);
 
-/* display location options */
+/* location choice feature */
+/* display location choice */
 const displayLocation = (e) => {
   let width = window.innerWidth;
 
   curtain.classList.toggle("block");
+  container.classList.toggle("container-block");
 
   if (width < 429) {
     mobileChangeLocation.classList.toggle("block");
@@ -37,18 +40,24 @@ const displayLocation = (e) => {
 
 headerAddress.addEventListener("click", displayLocation);
 
-/* remove location options */
+/* remove location choice */
 const removeLocation = (e) => {
+  
   let width = window.innerWidth;
 
   curtain.classList.remove("block");
+  container.classList.remove("container-block");
+
   if (width < 429) {
     mobileChangeLocation.classList.remove("block");
   } else {
     changeLocation.classList.remove("block");
   }
   console.log(e.target);
-};
+}
 
 closeLocation.addEventListener("click", removeLocation);
 mobileCloseLocation.addEventListener("click", removeLocation);
+
+
+/* zoop stories feature */
