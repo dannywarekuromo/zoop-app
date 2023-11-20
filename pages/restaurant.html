@@ -1,245 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoop || Restaurant</title>
     <link rel="stylesheet" href="../styles/main.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/restaurant.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="curtain"></div>
-        <!-- Header Section -->
-        <header id="header">
-          <div class="header-content">
-            <div class="logo-container">
-              <a href="#" class="logo-link">
-                <img src="../assets/zoop.svg" alt="zoop logo" />
-              </a>
-            </div>
-  
-            <div class="header-address">
-              <div class="address-head">
-                <img src="../assets/location-pin.svg" alt="location pin" />
-                <a href="#" class="address-link">Home</a>
-                <img src="../assets/right-arrow.svg" alt="right arrow" />
-              </div>
-              <div class="address-div">
-                <p class="address">RK Residency, 9th F Main, BTM Layout...</p>
-              </div>
-              <div class="change-location">
-                <div class="location-nav">
-                  <p class="location-head">Choose Location</p>
-                  <button class="close-location">
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.9993 2.66675C8.65268 2.66675 2.66602 8.65341 2.66602 16.0001C2.66602 23.3467 8.65268 29.3334 15.9993 29.3334C23.346 29.3334 29.3327 23.3467 29.3327 16.0001C29.3327 8.65341 23.346 2.66675 15.9993 2.66675ZM20.4793 19.0667C20.866 19.4534 20.866 20.0934 20.4793 20.4801C20.2793 20.6801 20.026 20.7734 19.7727 20.7734C19.5194 20.7734 19.266 20.6801 19.066 20.4801L15.9993 17.4134L12.9327 20.4801C12.7327 20.6801 12.4793 20.7734 12.226 20.7734C11.9727 20.7734 11.7193 20.6801 11.5194 20.4801C11.1327 20.0934 11.1327 19.4534 11.5194 19.0667L14.586 16.0001L11.5194 12.9334C11.1327 12.5467 11.1327 11.9067 11.5194 11.5201C11.906 11.1334 12.546 11.1334 12.9327 11.5201L15.9993 14.5867L19.066 11.5201C19.4527 11.1334 20.0927 11.1334 20.4793 11.5201C20.866 11.9067 20.866 12.5467 20.4793 12.9334L17.4127 16.0001L20.4793 19.0667Z"
-                        fill="#616469"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="locations-div">
-                  <a href="#" class="location">
-                    <div class="locale">
-                      <p class="locale-title active">Home</p>
-                      <p class="locale-address">
-                        9th F main, BTM Layout 1st,<br />
-                        Bengaluru - 560029
-                      </p>
-                    </div>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-                        fill="#FF1D23"
-                      />
-                    </svg>
-                  </a>
-                  <a href="#" class="location">
-                    <div class="locale">
-                      <p class="locale-title">Office</p>
-                      <p class="locale-address">
-                        9th F main, BTM Layout 1st,<br />
-                        Bengaluru - 560029
-                      </p>
-                    </div>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-                        fill="#8f949b"
-                      />
-                    </svg>
-                  </a>
-                  <a href="#" class="location">
-                    <div class="locale">
-                      <p class="locale-title">Office</p>
-                      <p class="locale-address">
-                        9th F main, BTM Layout 1st,<br />
-                        Bengaluru - 560029
-                      </p>
-                    </div>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-                        fill="#8f949b"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <nav class="nav">
-              <div class="nav-div">
-                <img src="../assets/home.svg" alt="home icon" />
-                <a href="#" class="nav-link active">Home</a>
-              </div>
-              <div class="nav-div">
-                <img src="../assets/favorites.svg" alt="favorites love icon" />
-                <a href="#" class="nav-link">Favorites</a>
-              </div>
-              <div class="nav-div">
-                <img src="../assets/basket.svg" alt="basket icon" />
-                <a href="#" class="nav-link">Basket</a>
-              </div>
-            </nav>
-            <form class="app-search" for="appsearch">
-              <input
-                class="search-input"
-                type="search"
-                id="appsearch"
-                name="appsearch"
-                placeholder="Search restaurants, food, etc"
-              />
-              <button type="submit">
-                <img src="../assets/search.svg" alt="search icon" />
-              </button>
-              <ul class="search-history"></ul>
-            </form>
-  
-            <div class="profile-img"></div>
+      <div class="curtain"></div>
+      <!-- Header Section -->
+      <header id="header">
+        <div class="header-content">
+          <div class="logo-container">
+            <a href="#" class="logo-link">
+              <img src="../assets/zoop.svg" alt="zoop logo" />
+            </a>
           </div>
-          <form class="responsive-app-search" for="appsearch">
+
+          <div class="header-address">
+            <div class="address-head">
+              <img src="../assets/location-pin.svg" alt="location pin" />
+              <a href="#" class="address-link">Home</a>
+              <img src="../assets/right-arrow.svg" alt="right arrow" />
+            </div>
+            <div class="address-div">
+              <p class="address">RK Residency, 9th F Main, BTM Layout...</p>
+            </div>
+            <div class="change-location">
+              <div class="location-nav">
+                <p class="location-head">Choose Location</p>
+                <button class="close-location">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.9993 2.66675C8.65268 2.66675 2.66602 8.65341 2.66602 16.0001C2.66602 23.3467 8.65268 29.3334 15.9993 29.3334C23.346 29.3334 29.3327 23.3467 29.3327 16.0001C29.3327 8.65341 23.346 2.66675 15.9993 2.66675ZM20.4793 19.0667C20.866 19.4534 20.866 20.0934 20.4793 20.4801C20.2793 20.6801 20.026 20.7734 19.7727 20.7734C19.5194 20.7734 19.266 20.6801 19.066 20.4801L15.9993 17.4134L12.9327 20.4801C12.7327 20.6801 12.4793 20.7734 12.226 20.7734C11.9727 20.7734 11.7193 20.6801 11.5194 20.4801C11.1327 20.0934 11.1327 19.4534 11.5194 19.0667L14.586 16.0001L11.5194 12.9334C11.1327 12.5467 11.1327 11.9067 11.5194 11.5201C11.906 11.1334 12.546 11.1334 12.9327 11.5201L15.9993 14.5867L19.066 11.5201C19.4527 11.1334 20.0927 11.1334 20.4793 11.5201C20.866 11.9067 20.866 12.5467 20.4793 12.9334L17.4127 16.0001L20.4793 19.0667Z"
+                      fill="#616469"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="locations-div">
+                <a href="#" class="location">
+                  <div class="locale">
+                    <p class="locale-title active">Home</p>
+                    <p class="locale-address">
+                      9th F main, BTM Layout 1st,<br />
+                      Bengaluru - 560029
+                    </p>
+                  </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+                      fill="#FF1D23"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="location">
+                  <div class="locale">
+                    <p class="locale-title">Office</p>
+                    <p class="locale-address">
+                      9th F main, BTM Layout 1st,<br />
+                      Bengaluru - 560029
+                    </p>
+                  </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+                      fill="#8f949b"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="location">
+                  <div class="locale">
+                    <p class="locale-title">Office</p>
+                    <p class="locale-address">
+                      9th F main, BTM Layout 1st,<br />
+                      Bengaluru - 560029
+                    </p>
+                  </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+                      fill="#8f949b"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav class="nav">
+            <div class="nav-div">
+              <img src="../assets/home.svg" alt="home icon" />
+              <a href="#" class="nav-link active">Home</a>
+            </div>
+            <div class="nav-div">
+              <img src="../assets/favorites.svg" alt="favorites love icon" />
+              <a href="#" class="nav-link">Favorites</a>
+            </div>
+            <div class="nav-div">
+              <img src="../assets/basket.svg" alt="basket icon" />
+              <a href="#" class="nav-link">Basket</a>
+            </div>
+          </nav>
+          <form class="app-search" for="appsearch">
             <input
               class="search-input"
               type="search"
+              id="appsearch"
               name="appsearch"
               placeholder="Search restaurants, food, etc"
             />
             <button type="submit">
               <img src="../assets/search.svg" alt="search icon" />
             </button>
-            <ul class="search-history"></ul>
           </form>
-        </header>
-  
-        <div class="mobile-change-location">
-          <div class="location-nav">
-            <p class="location-head">Choose Location</p>
-            <button class="mobile-close-location">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.9993 2.66675C8.65268 2.66675 2.66602 8.65341 2.66602 16.0001C2.66602 23.3467 8.65268 29.3334 15.9993 29.3334C23.346 29.3334 29.3327 23.3467 29.3327 16.0001C29.3327 8.65341 23.346 2.66675 15.9993 2.66675ZM20.4793 19.0667C20.866 19.4534 20.866 20.0934 20.4793 20.4801C20.2793 20.6801 20.026 20.7734 19.7727 20.7734C19.5194 20.7734 19.266 20.6801 19.066 20.4801L15.9993 17.4134L12.9327 20.4801C12.7327 20.6801 12.4793 20.7734 12.226 20.7734C11.9727 20.7734 11.7193 20.6801 11.5194 20.4801C11.1327 20.0934 11.1327 19.4534 11.5194 19.0667L14.586 16.0001L11.5194 12.9334C11.1327 12.5467 11.1327 11.9067 11.5194 11.5201C11.906 11.1334 12.546 11.1334 12.9327 11.5201L15.9993 14.5867L19.066 11.5201C19.4527 11.1334 20.0927 11.1334 20.4793 11.5201C20.866 11.9067 20.866 12.5467 20.4793 12.9334L17.4127 16.0001L20.4793 19.0667Z"
-                  fill="#616469"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="locations-div">
-            <a href="#" class="location">
-              <div class="locale">
-                <p class="locale-title active">Home</p>
-                <p class="locale-address">
-                  9th F main, BTM Layout 1st,<br />
-                  Bengaluru - 560029
-                </p>
+
+          <div class="profile-img"></div>
+        </div>
+        <form class="responsive-app-search" for="appsearch">
+          <input
+            class="search-input"
+            type="search"
+            name="appsearch"
+            placeholder="Search restaurants, food, etc"
+          />
+          <button type="submit">
+            <img src="../assets/search.svg" alt="search icon" />
+          </button>
+          <ul class="search-history"></ul>
+        </form>
+      </header>
+
+      <div class="mobile-change-location">
+        <div class="location-nav">
+          <p class="location-head">Choose Location</p>
+          <button class="mobile-close-location">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.9993 2.66675C8.65268 2.66675 2.66602 8.65341 2.66602 16.0001C2.66602 23.3467 8.65268 29.3334 15.9993 29.3334C23.346 29.3334 29.3327 23.3467 29.3327 16.0001C29.3327 8.65341 23.346 2.66675 15.9993 2.66675ZM20.4793 19.0667C20.866 19.4534 20.866 20.0934 20.4793 20.4801C20.2793 20.6801 20.026 20.7734 19.7727 20.7734C19.5194 20.7734 19.266 20.6801 19.066 20.4801L15.9993 17.4134L12.9327 20.4801C12.7327 20.6801 12.4793 20.7734 12.226 20.7734C11.9727 20.7734 11.7193 20.6801 11.5194 20.4801C11.1327 20.0934 11.1327 19.4534 11.5194 19.0667L14.586 16.0001L11.5194 12.9334C11.1327 12.5467 11.1327 11.9067 11.5194 11.5201C11.906 11.1334 12.546 11.1334 12.9327 11.5201L15.9993 14.5867L19.066 11.5201C19.4527 11.1334 20.0927 11.1334 20.4793 11.5201C20.866 11.9067 20.866 12.5467 20.4793 12.9334L17.4127 16.0001L20.4793 19.0667Z"
+                fill="#616469"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="locations-div">
+          <a href="#" class="location">
+            <div class="locale">
+              <p class="locale-title active">Home</p>
+              <p class="locale-address">
+                9th F main, BTM Layout 1st,<br />
+                Bengaluru - 560029
+              </p>
+            </div>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+                fill="#FF1D23"
+              />
+            </svg>
+          </a>
+          <a href="#" class="location">
+            <div class="locale">
+              <p class="locale-title">Office</p>
+              <p class="locale-address">
+                9th F main, BTM Layout 1st,<br />
+                Bengaluru - 560029
+              </p>
+            </div>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+                fill="#8f949b"
+              />
+            </svg>
+          </a>
+          <a href="#" class="location">
+            <div class="locale">
+              <p class="locale-title">Office</p>
+              <p class="locale-address">
+                9th F main, BTM Layout 1st,<br />
+                Bengaluru - 560029
+              </p>
+            </div>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+                fill="#8f949b"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <main>
+        <div class="restaurant-container">
+          <div class="restaurant-sort">
+            <nav class="sort-nav">
+              <div class="item-sort">
+                <p class="items-head">Food items</p>
+                <div class="full-display">
+                  <svg
+                    width="23"
+                    height="20"
+                    viewBox="0 0 23 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="23" height="8" rx="4" fill="#1B1B1B" />
+                    <rect y="12" width="23" height="8" rx="4" fill="#1B1B1B" />
+                  </svg>
+                </div>
+                <div class="grid-display">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#BBBBBB" />
+                    <circle cx="16" cy="4" r="4" fill="#BBBBBB" />
+                    <circle cx="4" cy="16" r="4" fill="#BBBBBB" />
+                    <circle cx="16" cy="16" r="4" fill="#BBBBBB" />
+                  </svg>
+                </div>
               </div>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-                  fill="#FF1D23"
-                />
-              </svg>
-            </a>
-            <a href="#" class="location">
-              <div class="locale">
-                <p class="locale-title">Office</p>
-                <p class="locale-address">
-                  9th F main, BTM Layout 1st,<br />
-                  Bengaluru - 560029
-                </p>
+              <div class="sort-dishes">
+                <div class="veggie-sort">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="#7BA700" />
+                    <path
+                      d="M4.02194 19.0021C4.02194 19.0021 4.84957 17.2541 10.8593 16.8175C15.2578 16.4979 19.0751 13.4274 16.4645 9.41913C16.4645 9.41913 18.5088 9.55245 19.6642 11.3301C19.6642 11.3301 20.4197 10.619 19.6642 9.7747C18.9087 8.93043 13.5263 5.91392 8.37124 12.7134L6.93663 14.5579C6.93663 14.5579 9.53171 7.10803 15.7979 7.77461C15.7979 7.77461 15.7535 5.81926 12.8648 5.10813C9.97604 4.39699 6.42072 7.28591 5.08757 11.0633C3.75442 14.8407 4.02194 19.0021 4.02194 19.0021Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="carnie-sort">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="#EA4335" />
+                    <path
+                      d="M18.1192 15.5243H16.7701L14.9352 13.69C15.5441 11.5501 13.5897 7.3804 12.1087 6.16854C10.3139 4.69816 7.80888 4.52563 6.16539 6.16736C4.52189 7.80909 4.70385 10.3082 6.16539 12.1119C7.62693 13.9155 11.6482 15.645 13.7251 14.9425L15.5099 16.7273V18.13C15.5099 18.3607 15.6016 18.582 15.7648 18.7452C15.9279 18.9083 16.1492 19 16.38 19C16.6107 19 16.832 18.9083 16.9952 18.7452C17.1583 18.582 17.25 18.3607 17.25 18.13V17.2643H18.1192C18.3499 17.2643 18.5712 17.1727 18.7344 17.0095C18.8975 16.8464 18.9892 16.6251 18.9892 16.3943C18.9892 16.1636 18.8975 15.9423 18.7344 15.7791C18.5712 15.6159 18.3499 15.5243 18.1192 15.5243ZM7.99084 8.05758C7.93718 8.11137 7.87344 8.15405 7.80326 8.18316C7.73309 8.21228 7.65786 8.22727 7.58188 8.22727C7.5059 8.22727 7.43067 8.21228 7.3605 8.18316C7.29032 8.15405 7.22658 8.11137 7.17292 8.05758C7.1179 8.00462 7.07414 7.94111 7.04425 7.87084C7.01435 7.80057 6.99894 7.72499 6.99894 7.64862C6.99894 7.57226 7.01435 7.49668 7.04425 7.42641C7.07414 7.35614 7.1179 7.29262 7.17292 7.23966C7.45462 6.95643 7.78953 6.73168 8.15839 6.57831C8.52724 6.42494 8.92277 6.34598 9.32224 6.34598C9.72171 6.34598 10.1172 6.42494 10.4861 6.57831C10.855 6.73168 11.1899 6.95643 11.4716 7.23966C11.8029 7.57802 12.0965 7.95139 12.3472 8.35319C12.431 8.48265 12.4603 8.63994 12.4287 8.79089C12.3972 8.94184 12.3074 9.07424 12.1788 9.15933C12.0855 9.21985 11.9767 9.25216 11.8655 9.25237C11.7677 9.25236 11.6714 9.22796 11.5853 9.18139C11.4993 9.13482 11.4262 9.06753 11.3726 8.98562C11.1638 8.65357 10.923 8.34274 10.6536 8.05758C10.2942 7.71658 9.81768 7.52649 9.32224 7.52649C8.82681 7.52649 8.35025 7.71658 7.99084 8.05758Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="sort-by sort-by-rolls">Rolls &amp Fry</div>
+                <div class="sort-by sort-by-roti">Roti</div>
+                <div class="sort-by sort-by-extra">Extra</div>
+                <div class="sort-by sort-by-drinks">Drinks &amp Beverages</div>
               </div>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-                  fill="#8f949b"
-                />
-              </svg>
-            </a>
-            <a href="#" class="location">
-              <div class="locale">
-                <p class="locale-title">Office</p>
-                <p class="locale-address">
-                  9th F main, BTM Layout 1st,<br />
-                  Bengaluru - 560029
-                </p>
-              </div>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-                  fill="#8f949b"
-                />
-              </svg>
-            </a>
+            </nav>
           </div>
         </div>
+        
+      </main>
     </div>
-</body>
+  </body>
 </html>
