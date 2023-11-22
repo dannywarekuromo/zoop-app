@@ -1,0 +1,132 @@
+@import url("style.css");
+
+.food-items-sidebar {
+  padding-top: var(--ws-4);
+  gap: var(--ws-large);
+}
+
+/*=== food header ===*/
+.food-items {
+  width: 75%;
+}
+
+.food-items-title {
+  white-space: nowrap;
+}
+
+.food-items-display-style {
+  margin-top: var(--ws-1);
+}
+
+.food-items-veg,
+.food-items-carn {
+  border-radius: 50px;
+  box-shadow: 20px 20px 50px 0px #cdcdcd inset, -10px -10px 50px 0px #fff inset;
+  width: 50px;
+  height: 30px;
+}
+
+.food-items-veg {
+  border: 2px solid #7ba700;
+}
+
+.food-items-carn {
+  border: 2px solid var(--clr-accent);
+}
+
+.food-items-veg svg,
+.food-items-carn svg {
+  margin-left: 0.2rem;
+}
+
+.food-category-item {
+  width: fit-content;
+  padding: var(--ws-2) var(--ws-3);
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background: #f6f6f6;
+  white-space: nowrap;
+  box-shadow: 20px 20px 50px 0px #cdcdcd inset, -10px -10px 50px 0px #fff inset;
+}
+
+/*=== food item content ===*/
+.food {
+  border-radius: 8px;
+  background: #fff;
+  padding: var(--ws-3);
+  width: minmax(10rem, fit-content);
+}
+
+.food-items-content {
+  padding-top: var(--ws-large);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  grid-gap: var(--ws-4);
+}
+
+.food-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 6px;
+  background: lightgray 50% / cover no-repeat, #d9d9d9;
+}
+
+.food-rating-fav {
+  gap: var(--ws-4);
+}
+
+.food-rating-content {
+  border-radius: 3px;
+  width: fit-content;
+  padding: var(--ws-1) var(--ws-2);
+  background-color: var(--clr-splash);
+}
+
+.food-rating-figure {
+  color: #f6f6f6;
+}
+
+.food-rating-status {
+  color: var(--clr-accent);
+}
+
+.food-add-btn {
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    #ff6315 0%,
+    #ff411c 25%,
+    #ff1d23 50%,
+    #ff0728 75%,
+    #ff002a 100%
+  );
+  color: #f6f6f6;
+  padding: var(--ws-2) var(--ws-4);
+}
+
+/*=== food sidebar ===*/
+
+.food-sidebar {
+  width: 35%;
+}
+
+.food-sidebar-top {
+  padding: var(--ws-3);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.food-sidebar-choice-p {
+  color: #7ba700;
+}
+
+.food-sidebar-rating-p {
+  color: #9747ff;
+}
+
+.food-sidebar-category-item {
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  padding: var(--ws-1);
+  background: #fff;
+}
