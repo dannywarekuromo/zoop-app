@@ -2,12 +2,12 @@
 
 .food-items-sidebar {
   padding-top: var(--ws-4);
-  gap: var(--ws-large);
+  gap: var(--ws-4);
 }
 
 /*=== food header ===*/
 .food-items {
-  width: 75%;
+  width: 70%;
 }
 
 .food-items-title {
@@ -107,13 +107,21 @@
 /*=== food sidebar ===*/
 
 .food-sidebar {
-  width: 35%;
+  width: 30%;
+  gap: var(--ws-4);
+}
+
+.food-sidebar-top,
+.food-sidebar-payment-portal,
+.food-sidebar-restaurant-info,
+.food-sidebar-slider {
+  padding: var(--ws-reg);
+  border-radius: 8px;
+  background: #fff;
 }
 
 .food-sidebar-top {
-  padding: var(--ws-3);
-  border-radius: 8px;
-  background: #fff;
+  gap: var(--ws-3);
 }
 
 .food-sidebar-choice-p {
@@ -129,4 +137,96 @@
   border: 1px solid #eaeaea;
   padding: var(--ws-1);
   background: #fff;
+}
+
+.food-sidebar-payment-link {
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #ff6315 0%,
+    #ff411c 25%,
+    #ff1d23 50%,
+    #ff0728 75%,
+    #ff002a 100%
+  );
+  color: #fff;
+  padding: var(--ws-2) var(--ws-3);
+}
+
+.food-sidebar-restaurant-info {
+  justify-content: space-around;
+}
+
+.food-sidebar-slider {
+  position: relative;
+}
+
+.food-sidebar-slider-container {
+  overflow-x: hidden;
+}
+
+.food-sidebar-slide-counter {
+  position: absolute;
+  right: 0%;
+  bottom: 50%;
+  margin-right: var(--ws-reg);
+  /* transform: translate(-50%, -50%); */
+}
+
+.food-sidebar-span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--clr-secondary);
+  opacity: 0.4;
+}
+
+.food-sidebar-span.active {
+  width: 6px;
+  height: 6px;
+  opacity: 1;
+}
+
+.food-sidebar-slide {
+  position: relative;
+  opacity: 0;
+}
+
+.food-sidebar-slide.display {
+  position: relative;
+  opacity: 1;
+}
+
+.food-sidebar-slide-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: rgba(255, 99, 21, 0.25);
+}
+
+.food-sidebar-text-p {
+  text-align: center;
+}
+
+.food-sidebar-order-delivery {
+  padding: var(--ws-reg);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background: #f6f6f6;
+  box-shadow: 10px 10px 50px 0px #cdcdcd, -10px -10px 50px 0px #fff,
+    -10px -10px 100px 0px #cdcdcd inset, 10px 10px 100px 0px #fff inset;
+}
+
+@media screen and (max-width: 1115px) {
+  .food-items-veg-carn {
+    display: none;
+  }
+
+  .food-items-sidebar {
+    gap: var(--ws-3);
+  }
+
+  .food-sidebar-slide-counter {
+    bottom: 60%;
+  }
 }
