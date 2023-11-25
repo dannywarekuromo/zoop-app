@@ -133,11 +133,19 @@ section {
   cursor: pointer;
 }
 
-.span-space {
+.span-space,
+.span-space-light {
   width: 3px;
   height: 3px;
   border-radius: 33.3px;
+}
+
+.span-space {
   background-color: var(--clr-light);
+}
+
+.span-space-light {
+  background-color: #fff;
 }
 
 /* layout classes */
@@ -199,7 +207,9 @@ section {
   white-space: nowrap;
 }
 
-.text-sl, .text-sl-light, .text-sl-dark {
+.text-sl,
+.text-sl-light,
+.text-sl-dark {
   font-size: 14px;
   font-weight: 600;
   width: fit-content;
@@ -430,10 +440,15 @@ section {
 }
 
 .stories-container {
-  /* background-color: #1b1b1b; */
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: auto;
   padding: var(--ws-2);
-  /* scroll-padding: var(--ws-auto); */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.stories-container::-webkit-scrollbar {
+  display: none;
 }
 
 .stories-content {
@@ -480,7 +495,6 @@ section {
   gap: var(--ws-4);
 }
 
-
 .story-full-img {
   height: 100%;
   width: 100%;
@@ -491,6 +505,11 @@ section {
   padding-top: var(--ws-4);
   padding-bottom: var(--ws-4);
 }
+
+.favorite-header {
+  padding: 0 var(--ws-auto);
+}
+
 .favorite-scroll-btn,
 .recent-scroll-btn {
   gap: var(--ws-4);
@@ -498,8 +517,25 @@ section {
 
 .favorites-content {
   padding-top: var(--ws-4);
-  gap: var(--ws-4);
+  overflow: scroll visible;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+.favorites-content::-webkit-scrollbar {
+  display: none;
+}
+
+.favorites {
+  height: 140px;
+  padding: 0 var(--ws-auto);
+  gap: var(--ws-2);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* .favorites {
+  padding: var(--ws-2);
+} */
 
 .favorite {
   border-radius: 46.5px;
@@ -660,6 +696,7 @@ section {
 #footer {
   padding: var(--ws-4) var(--ws-auto);
   position: relative;
+  background-color: #fff;
 }
 
 .footer-p {
@@ -690,7 +727,7 @@ section {
 }
 
 .footer-policy-btn {
-  padding: var(--ws-reg);
+  padding: var(--ws-3);
   width: fit-content;
   border-radius: 46.5px;
   border: 1px solid #fff;
@@ -735,6 +772,7 @@ section {
 
   #footer {
     height: 15vh;
+    background-color: transparent;
   }
 
   .footer-container {
@@ -833,7 +871,6 @@ section {
 }
 
 @media screen and (max-width: 430px) {
-  
 }
 
 @keyframes slidein {
