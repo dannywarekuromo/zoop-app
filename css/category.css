@@ -1,0 +1,15 @@
+@import url("style.css");
+@import url("menu-sidebar.css");
+
+.food-sidebar-delivery-content, .food-sidebar-payment-summary, .food-sidebar-order-container {
+    display: none;
+}
+
+.food-sidebar-menu-content {
+    bottom: 0%;
+}
+
+
+.category-items-display {
+    gap: var(--ws-3);
+}

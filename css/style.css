@@ -113,7 +113,7 @@ section {
 .curtain {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: var(--clr-transparent);
@@ -290,6 +290,13 @@ section {
 .header {
   padding: var(--ws-4) var(--ws-auto);
   height: 96px;
+  transition: all 0.3s ease;
+  z-index: var(--z-1);
+}
+
+.header.active {
+  background-color: var(--clr-primary);
+  position: fixed;
 }
 
 /*=== address styling ===*/
@@ -350,7 +357,7 @@ section {
 /*=== mobile floating address ===*/
 .mobile-address-list {
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   left: 50%;
   transform: translate(-50%, 100%);
@@ -607,7 +614,7 @@ section {
 
 .restaurant-sort-item {
   width: fit-content;
-  padding: var(--ws-2) var(--ws-3);
+    padding: var(--ws-2) var(--ws-3);
   white-space: nowrap;
   border-radius: 50px;
   border: 1px solid #fff;

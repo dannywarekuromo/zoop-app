@@ -1,3 +1,10 @@
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".header");
+
+  header.classList.toggle("active", window.scrollY > 95);
+}) 
+
+
 window.addEventListener("load", () => {
   /*=== global variables ===*/
   const addressTitle = document.querySelector(".address-title");
@@ -5,8 +12,6 @@ window.addEventListener("load", () => {
   const mobileAddressCloseBtn = document.querySelector(
     ".mobile-address-list-close"
   );
-  const storiesContainer = document.querySelector(".stories-container");
-  const storiesContent = document.querySelector(".stories-content");
   const addressListLinks = document.querySelectorAll(".address-list-link");
   const curtain = document.querySelector(".curtain");
 
@@ -45,11 +50,9 @@ window.addEventListener("load", () => {
   addressTitle.addEventListener("click", displayAddressList);
   addressCloseBtn.addEventListener("click", removeAddressList);
   mobileAddressCloseBtn.addEventListener("click", removeAddressList);
-  addressListLinks.forEach(
-    (addressLink) => {
-        addressLink.addEventListener("click", (e) => {
-            console.log(e);
-        })
-    }
-  )
+  addressListLinks.forEach((addressLink) => {
+    addressLink.addEventListener("click", (e) => {
+      console.log(e);
+    });
+  });
 });

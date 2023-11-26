@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zoop || Restaurants</title>
-    <link rel="stylesheet" href="../css/menu-sidebar.css" />
+    <title>Zoop || Category</title>
+    <link rel="stylesheet" href="../css/category.css" />
     <script src="../js/script.js" defer></script>
     <script src="../js/menu-sidebar.js" defer></script>
   </head>
@@ -362,53 +362,37 @@
         <li class="mobile-search-history-list">chinese</li>
       </ul>
     </div>
+
     <main>
-      <!-- food section -->
-      <section class="food-section">
+      <!-- category section -->
+      <section class="category-section">
         <div class="food-items-sidebar flex-start">
-          <!-- food items -->
+          <!-- category items -->
           <div class="food-items">
-            <!-- food header -->
-            <div class="food-items-header flex-between">
-              <div class="food-items-display flex">
-                <p class="food-items-title text-ml">Food items</p>
+            <!-- category header -->
+            <div class="category-items-header flex-between">
+              <a
+                href="./restaurant.html"
+                class="category-items-display flex-center"
+              >
                 <div class="food-items-display-style flex">
-                  <div class="food-items-display-list active btn">
-                    <svg
-                      width="23"
-                      height="20"
-                      viewBox="0 0 23 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect width="23" height="6" rx="4" fill="#1B1B1B" />
-                      <rect
-                        y="12"
-                        width="23"
-                        height="6"
-                        rx="4"
-                        fill="#1B1B1B"
-                      />
-                    </svg>
-                  </div>
-                  <div class="food-items-display-grid btn">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="4" cy="4" r="4" fill="#BBBBBB" />
-                      <circle cx="16" cy="4" r="4" fill="#BBBBBB" />
-                      <circle cx="4" cy="16" r="4" fill="#BBBBBB" />
-                      <circle cx="16" cy="16" r="4" fill="#BBBBBB" />
-                    </svg>
-                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="11"
+                    viewBox="0 0 18 11"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.9534 4.42926H8.36102V1.49464C8.36102 0.727942 7.54144 0.252058 6.88049 0.635409L0.773311 4.16488C-0.25777 4.75974 -0.25777 6.24027 0.773311 6.83512L6.88049 10.3646C7.54144 10.7479 8.36102 10.2721 8.36102 9.50536V6.39889H17.0062C17.5614 6.39889 18.0109 5.94945 17.9977 5.38103C17.9712 4.85227 17.4953 4.42926 16.9534 4.42926Z"
+                      fill="#5C5F64"
+                    />
+                  </svg>
                 </div>
-              </div>
-              <div class="food-items-category flex">
-                <div class="food-items-veg-carn flex">
+                <p class="category-items-title text-ml">Biryani</p>
+              </a>
+              <div class="category-items-category flex">
+                <div class="category-items-veg-carn flex">
                   <div class="food-items-veg btn flex">
                     <svg
                       width="24"
@@ -440,16 +424,6 @@
                     </svg>
                   </div>
                 </div>
-                <ul class="food-category-list flex">
-                  <li class="food-category-item text-sl btn">
-                    Rolls &amp Fries
-                  </li>
-                  <li class="food-category-item text-sl btn">Roti</li>
-                  <li class="food-category-item text-sl btn">Extra</li>
-                  <li class="food-category-item text-sl btn">
-                    Drinks &amp Beverages
-                  </li>
-                </ul>
               </div>
             </div>
             <!-- food items content -->
@@ -497,20 +471,6 @@
                         </svg>
                         <p class="foot-rating-status-p">Bestseller</p>
                       </div>
-                    </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
                     </div>
                   </div>
                   <p class="food-name text-normal">French Fries</p>
@@ -563,20 +523,6 @@
                         </svg>
                         <p class="foot-rating-status-p">Bestseller</p>
                       </div>
-                    </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
                     </div>
                   </div>
                   <p class="food-name text-normal">French Fries</p>
@@ -630,20 +576,6 @@
                         <p class="foot-rating-status-p">Bestseller</p>
                       </div>
                     </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                    </div>
                   </div>
                   <p class="food-name text-normal">French Fries</p>
                   <p class="food-price text-sl-dark">₹250</p>
@@ -696,20 +628,6 @@
                         <p class="foot-rating-status-p">Bestseller</p>
                       </div>
                     </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                    </div>
                   </div>
                   <p class="food-name text-normal">French Fries</p>
                   <p class="food-price text-sl-dark">₹250</p>
@@ -717,453 +635,6 @@
                     <button class="food-add-btn text-normal btn">Add</button>
                   </div>
                 </div>
-              </div>
-              <div class="food flex-center">
-                <div class="food-img container">
-                  <img src="../assets/food.png" alt="" />
-                </div>
-                <div class="food-details flex-column">
-                  <div class="food-rating-fav flex">
-                    <div class="food-rating flex text-sm">
-                      <div class="food-rating-content flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#f6f6f6"
-                          />
-                        </svg>
-                        <p class="food-rating-figure">4.2</p>
-                      </div>
-                      <div class="food-rating-status flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="20"
-                          viewBox="0 0 21 20"
-                          fill="none"
-                        >
-                          <rect
-                            x="1.66211"
-                            y="1"
-                            width="18"
-                            height="18"
-                            rx="3"
-                            stroke="#EA4335"
-                            stroke-width="2"
-                          />
-                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
-                        </svg>
-                        <p class="foot-rating-status-p">Bestseller</p>
-                      </div>
-                    </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <p class="food-name text-normal">French Fries</p>
-                  <p class="food-price text-sl-dark">₹250</p>
-                  <div class="food-add-btn-container flex-right container">
-                    <button class="food-add-btn text-normal btn">Add</button>
-                  </div>
-                </div>
-              </div>
-              <div class="food flex-center">
-                <div class="food-img container">
-                  <img src="../assets/food.png" alt="" />
-                </div>
-                <div class="food-details flex-column">
-                  <div class="food-rating-fav flex">
-                    <div class="food-rating flex text-sm">
-                      <div class="food-rating-content flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#f6f6f6"
-                          />
-                        </svg>
-                        <p class="food-rating-figure">4.2</p>
-                      </div>
-                      <div class="food-rating-status flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="20"
-                          viewBox="0 0 21 20"
-                          fill="none"
-                        >
-                          <rect
-                            x="1.66211"
-                            y="1"
-                            width="18"
-                            height="18"
-                            rx="3"
-                            stroke="#EA4335"
-                            stroke-width="2"
-                          />
-                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
-                        </svg>
-                        <p class="foot-rating-status-p">Bestseller</p>
-                      </div>
-                    </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <p class="food-name text-normal">French Fries</p>
-                  <p class="food-price text-sl-dark">₹250</p>
-                  <div class="food-add-btn-container flex-right container">
-                    <button class="food-add-btn text-normal btn">Add</button>
-                  </div>
-                </div>
-              </div>
-              <div class="food flex-center">
-                <div class="food-img container">
-                  <img src="../assets/food.png" alt="" />
-                </div>
-                <div class="food-details flex-column">
-                  <div class="food-rating-fav flex">
-                    <div class="food-rating flex text-sm">
-                      <div class="food-rating-content flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#f6f6f6"
-                          />
-                        </svg>
-                        <p class="food-rating-figure">4.2</p>
-                      </div>
-                      <div class="food-rating-status flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="20"
-                          viewBox="0 0 21 20"
-                          fill="none"
-                        >
-                          <rect
-                            x="1.66211"
-                            y="1"
-                            width="18"
-                            height="18"
-                            rx="3"
-                            stroke="#EA4335"
-                            stroke-width="2"
-                          />
-                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
-                        </svg>
-                        <p class="foot-rating-status-p">Bestseller</p>
-                      </div>
-                    </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <p class="food-name text-normal">French Fries</p>
-                  <p class="food-price text-sl-dark">₹250</p>
-                  <div class="food-add-btn-container flex-right container">
-                    <button class="food-add-btn text-normal btn">Add</button>
-                  </div>
-                </div>
-              </div>
-              <div class="food flex-center">
-                <div class="food-img container">
-                  <img src="../assets/food.png" alt="" />
-                </div>
-                <div class="food-details flex-column">
-                  <div class="food-rating-fav flex">
-                    <div class="food-rating flex text-sm">
-                      <div class="food-rating-content flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#f6f6f6"
-                          />
-                        </svg>
-                        <p class="food-rating-figure">4.2</p>
-                      </div>
-                      <div class="food-rating-status flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="20"
-                          viewBox="0 0 21 20"
-                          fill="none"
-                        >
-                          <rect
-                            x="1.66211"
-                            y="1"
-                            width="18"
-                            height="18"
-                            rx="3"
-                            stroke="#EA4335"
-                            stroke-width="2"
-                          />
-                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
-                        </svg>
-                        <p class="foot-rating-status-p">Bestseller</p>
-                      </div>
-                    </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <p class="food-name text-normal">French Fries</p>
-                  <p class="food-price text-sl-dark">₹250</p>
-                  <div class="food-add-btn-container flex-right container">
-                    <button class="food-add-btn text-normal btn">Add</button>
-                  </div>
-                </div>
-              </div>
-              <div class="food flex-center">
-                <div class="food-img container">
-                  <img src="../assets/food.png" alt="" />
-                </div>
-                <div class="food-details flex-column">
-                  <div class="food-rating-fav flex">
-                    <div class="food-rating flex text-sm">
-                      <div class="food-rating-content flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#f6f6f6"
-                          />
-                        </svg>
-                        <p class="food-rating-figure">4.2</p>
-                      </div>
-                      <div class="food-rating-status flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="20"
-                          viewBox="0 0 21 20"
-                          fill="none"
-                        >
-                          <rect
-                            x="1.66211"
-                            y="1"
-                            width="18"
-                            height="18"
-                            rx="3"
-                            stroke="#EA4335"
-                            stroke-width="2"
-                          />
-                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
-                        </svg>
-                        <p class="foot-rating-status-p">Bestseller</p>
-                      </div>
-                    </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <p class="food-name text-normal">French Fries</p>
-                  <p class="food-price text-sl-dark">₹250</p>
-                  <div class="food-add-btn-container flex-right container">
-                    <button class="food-add-btn text-normal btn">Add</button>
-                  </div>
-                </div>
-              </div>
-              <div class="food flex-center">
-                <div class="food-img container">
-                  <img src="../assets/food.png" alt="" />
-                </div>
-                <div class="food-details flex-column">
-                  <div class="food-rating-fav flex">
-                    <div class="food-rating flex text-sm">
-                      <div class="food-rating-content flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#f6f6f6"
-                          />
-                        </svg>
-                        <p class="food-rating-figure">4.2</p>
-                      </div>
-                      <div class="food-rating-status flex-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="20"
-                          viewBox="0 0 21 20"
-                          fill="none"
-                        >
-                          <rect
-                            x="1.66211"
-                            y="1"
-                            width="18"
-                            height="18"
-                            rx="3"
-                            stroke="#EA4335"
-                            stroke-width="2"
-                          />
-                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
-                        </svg>
-                        <p class="foot-rating-status-p">Bestseller</p>
-                      </div>
-                    </div>
-                    <div class="food-fav-icon btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                      >
-                        <path
-                          d="M15.9993 28.8666C15.586 28.8666 15.186 28.8133 14.8527 28.6933C9.75935 26.9466 1.66602 20.7466 1.66602 11.5866C1.66602 6.91997 5.43935 3.1333 10.0793 3.1333C12.3327 3.1333 14.4393 4.0133 15.9993 5.58663C17.5593 4.0133 19.666 3.1333 21.9193 3.1333C26.5594 3.1333 30.3327 6.9333 30.3327 11.5866C30.3327 20.76 22.2393 26.9466 17.146 28.6933C16.8127 28.8133 16.4127 28.8666 15.9993 28.8666ZM10.0793 5.1333C6.54602 5.1333 3.66602 8.02663 3.66602 11.5866C3.66602 20.6933 12.426 25.76 15.506 26.8133C15.746 26.8933 16.266 26.8933 16.506 26.8133C19.5727 25.76 28.346 20.7066 28.346 11.5866C28.346 8.02663 25.466 5.1333 21.9327 5.1333C19.906 5.1333 18.026 6.07997 16.8127 7.71997C16.4393 8.22663 15.586 8.22663 15.2127 7.71997C13.9727 6.06663 12.106 5.1333 10.0793 5.1333Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <p class="food-name text-normal">French Fries</p>
-                  <p class="food-price text-sl-dark">₹250</p>
-                  <div class="food-add-btn-container flex-right container">
-                    <button class="food-add-btn text-normal btn">Add</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="food-items-grid-content">
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Rolls &amp Fries</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Roti</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Rice Combo</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Biryani</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Beverages</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Desserts</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Chinese Food</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Burger</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Rolls &amp Fries</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Roti</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Rice Combo</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Biryani</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Beverages</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Desserts</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Chinese Food</p>
-              </div>
-              <div class="food-grid-item btn flex-center">
-                <p class="food-grid-item-p text-normal">Burger</p>
               </div>
             </div>
           </div>
@@ -1328,7 +799,9 @@
             </div>
             <div class="food-sidebar-order-container">
               <div class="food-sidebar-order-delivery flex-column-center">
-                <div class="food-sidebar-delivery-content container flex-between">
+                <div
+                  class="food-sidebar-delivery-content container flex-between"
+                >
                   <p class="food-sidebar-order-p text-sl-dark">Order type</p>
                   <div class="food-sidebar-delivery-dropdown btn flex">
                     <p class="text-sl-dark">Delivery</p>
@@ -1521,7 +994,6 @@
         </div>
       </section>
 
-      <!-- footer section -->
       <footer id="footer">
         <div class="footer-container flex-between">
           <div class="footer-logo">
@@ -1836,7 +1308,6 @@
         <p class="text-sm mobile-nav-link-p">Basket</p>
       </a>
     </nav>
-
     <!-- floating mobile address -->
     <div class="mobile-address-list flex-column">
       <div class="address-list-head flex-between">
