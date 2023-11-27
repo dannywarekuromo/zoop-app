@@ -14,6 +14,7 @@ window.addEventListener("load", () => {
   );
   const addressListLinks = document.querySelectorAll(".address-list-link");
   const curtain = document.querySelector(".curtain");
+  const priceDropdown = document.querySelector(".restaurant-sort-dropdown-container");
 
   const displayAddressList = (e) => {
     const addressList = document.querySelector(".address-list");
@@ -42,6 +43,12 @@ window.addEventListener("load", () => {
       mobileAddressList.classList.remove("float");
     }
   };
+
+  const displayPriceDropdown = () => {
+    priceDropdown.classList.toggle("active");
+  }
+
+  priceDropdown.addEventListener("click", displayPriceDropdown);
 
   // storiesContainer.addEventListener("mouseenter", (e) => {
   //   console.log(storiesContent.offsetWidth);
