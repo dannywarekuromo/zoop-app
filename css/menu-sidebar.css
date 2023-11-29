@@ -61,7 +61,7 @@
 .food-items-content {
   padding-top: var(--ws-large);
   /* display: grid; */
-  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  grid-template-columns: repeat(2, minmax(15rem, 1fr));
   grid-gap: var(--ws-4);
   display: none;
 }

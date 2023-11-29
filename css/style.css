@@ -327,6 +327,10 @@ section {
   /* display: none; */
 }
 
+.mobile-address-list {
+  display: none;
+}
+
 .address-list.float {
   display: flex;
   transform: translateY(0%);
@@ -335,41 +339,32 @@ section {
   z-index: var(--z-2);
 }
 
-.address-list-link {
+.address-list-link, .mobile-address-list-link {
   padding-top: var(--ws-4);
   padding-bottom: var(--ws-4);
   border-bottom: 1px solid var(--clr-transparent);
+  transition: all 0.3s ease;
 }
 
-.address-list-link:first-child {
+.address-list-link:hover svg path {
+  fill: var(--clr-dark);
+}
+
+.address-list-link:first-child, .mobile-address-list-link:first-child {
   padding-top: 0px;
 }
 
-.address-list-link:last-child {
+.address-list-link:last-child, .mobile-address-list-link:last-child {
   padding-bottom: 0px;
   border-bottom: none;
 }
 
-.address-list-title.active {
+.address-list-link.active .address-list-title {
   color: var(--clr-accent);
 }
 
-/*=== mobile floating address ===*/
-.mobile-address-list {
-  background-color: #ffffff;
-  position: fixed;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, 100%);
-  padding: var(--ws-4);
-  width: 95%;
-  border-radius: 32px 32px 0px 0px;
-  background: #fff;
-  gap: var(--ws-4);
-  transition: all 0.3s ease;
-  opacity: 0;
-  pointer-events: none;
-  /* display: none; */
+.address-list-link.active svg path {
+  fill: var(--clr-accent);
 }
 
 /*=== header nav ===*/
@@ -389,6 +384,14 @@ section {
 .header-nav-link:hover p,
 .mobile-nav-link:hover p {
   color: var(--clr-accent);
+}
+
+.mobile-nav-link.active .mobile-nav-link-p{
+  color: var(--clr-accent);
+}
+
+.mobile-nav-link.active svg path {
+  fill: var(--clr-accent);
 }
 
 .header-nav-link-p.active,
@@ -413,9 +416,10 @@ section {
   padding: var(--ws-4);
   background: linear-gradient(135deg, #dfdfdf 0%, #fff 100%);
   box-shadow: 10px 10px 50px 0px #cdcdcd, -10px -10px 50px 0px #fff;
+  z-index: var(--z-1);
 }
 
-.app-search {
+.app-search.active {
   border-radius: 24px 24px 0px 0px;
 }
 
@@ -426,27 +430,23 @@ section {
 }
 
 .search-history {
-  padding: var(--ws-4);
+  padding: var(--ws-4) 0px;
   position: absolute;
   width: 100%;
   border-top: 1px solid var(--clr-light);
-  border-radius: 0PX 0px 24px 24px;
+  border-radius: 0px 0px 24px 24px;
   background: linear-gradient(85deg, #dfdfdf 0%, #fff 100%);
+  z-index: var(--z-1);
+  display: none;
 }
 
-.search-history-item {
-  padding-top: var(--ws-reg);
-  padding-bottom: var(--ws-reg);
-  border-top: 1px solid var(--clr-light);
-  border-bottom: 1px solid var(--clr-light);
+.search-history.active {
+  display: block;
 }
 
-.search-history-item:first-child {
-  border-top: none;
-}
-
-.search-history-item:last-child {
-  border-bottom: none;
+.search-history-header,
+.search-history-closest-restaurant {
+  padding: 0 var(--ws-4);
 }
 
 .search-history-restaurants {
@@ -466,25 +466,72 @@ section {
 
 .search-history-restaurant-content {
   display: grid;
-  grid-template-columns: repeat(3, 48.31%);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--ws-3);
+  padding: var(--ws-3);
 }
 
 .search-history-restaurant {
-  padding: var(--ws-2);
-  border-radius: 8px;
+  border-radius: 46.5px;
   border: 1px solid #fff;
   background: #f6f6f6;
+  gap: var(--ws-2);
+  /* height: 70px; */
+  padding-right: var(--ws-3);
 }
 
-.mobile-search-history {
-  position: absolute;
-  display: none;
+.search-history-restaurant-img {
+  width: 68px;
+  height: 68px;
+  background-color: var(--clr-primary);
+  border-radius: 50%;
+}
+
+.search-history-closest-img img {
+  width: 62px;
+  height: 62px;
+  border-radius: 25%;
+}
+
+.search-history-closest-item {
+  gap: var(--ws-3);
+  padding: var(--ws-3) 0px;
+  border-bottom: 1px solid var(--clr-light);
+}
+
+.search-history-closest-item:last-child {
+  border-bottom: none;
 }
 
 .mobile-search {
   display: none;
 }
+
+.mobile-search.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: var(--ws-auto) 0;
+  background: var(--clr-primary);
+  z-index: var(--z-2);
+}
+
+.mobile-search.active .mobile-form-container {
+  padding: var(--ws-reg);
+}
+
+.mobile-search-history {
+  display: none;
+}
+
+.mobile-search.active .mobile-search-history {
+  display: block;
+}
+
+/* .mobile-search.active .mobile-app-search {
+  padding: var(--ws-auto);
+} */
 
 /*=== header profile ===*/
 .profile-id {
@@ -578,7 +625,7 @@ section {
 }
 
 .favorites-content {
-  padding-top: var(--ws-4);
+  padding-top: var(--ws-2);
   overflow: scroll visible;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -589,15 +636,12 @@ section {
 }
 
 .favorites {
-  height: 140px;
-  padding: 0 var(--ws-auto);
+  display: grid;
+  grid-auto-flow: column;
+  height: fit-content;
+  padding: var(--ws-4) var(--ws-auto);
   gap: var(--ws-2);
-  -webkit-overflow-scrolling: touch;
 }
-
-/* .favorites {
-  padding: var(--ws-2);
-} */
 
 .favorite {
   border-radius: 46.5px;
@@ -863,6 +907,7 @@ section {
     border-radius: 100px;
     background: linear-gradient(135deg, #dfdfdf 0%, #fff 100%);
     display: flex;
+    z-index: var(--z-1);
   }
 
   .restaurant-container {
@@ -917,6 +962,23 @@ section {
     display: none;
   }
 
+  /*=== mobile floating address ===*/
+  .mobile-address-list {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    padding: var(--ws-4);
+    width: 95%;
+    border-radius: 32px 32px 0px 0px;
+    background: #fff;
+    gap: var(--ws-4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    display: block;
+  }
+
   .mobile-address-list.float {
     display: flex;
     z-index: var(--z-1);
@@ -924,6 +986,19 @@ section {
     pointer-events: all;
     transform: translate(-50%, 0%);
   }
+
+  .mobile-address-list-link.active .mobile-address-list-title {
+    color: var(--clr-accent);
+  }
+
+  .mobile-address-list-link:hover svg path {
+    fill: var(--clr-dark);
+  }
+  
+  .mobile-address-list-link.active svg path {
+    fill: var(--clr-accent);
+  }
+
 
   .mobile-search {
     display: flex;
@@ -972,6 +1047,10 @@ section {
   .restaurant-content {
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  .favorites {
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
