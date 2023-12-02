@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
+  /* outline: 1px dotted limegreen; */
 }
 
 :root {
@@ -176,7 +177,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--ws-4);
+  gap: var(--ws-3);
 }
 
 .flex-between {
@@ -610,7 +611,7 @@ section {
 }
 
 /*=== favorites section ===*/
-.favorites-section {
+.favorites-section, .recent-section {
   padding-top: var(--ws-4);
   padding-bottom: var(--ws-4);
 }
@@ -624,14 +625,23 @@ section {
   gap: var(--ws-4);
 }
 
-.favorites-content {
+.favorite-scroll-btn.disable, .recent-scroll-btn.disable {
+  pointer-events: none;
+}
+
+.favorite-scroll-btn.disable div svg path, .recent-scroll-btn.disable div svg path {
+  fill: var(--clr-background);
+}
+
+.favorites-content, .recent-content {
   padding-top: var(--ws-2);
   overflow: scroll visible;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
-.favorites-content::-webkit-scrollbar {
+.favorites-content::-webkit-scrollbar,  .recent-content::-webkit-scrollbar {
   display: none;
 }
 
@@ -661,14 +671,22 @@ section {
 }
 
 /*=== recent section ===*/
-.recent-section {
+/* .recent-section {
   padding-top: var(--ws-4);
-}
+} */
 
-.recent-content {
+/* .recent-content {
   padding-top: var(--ws-4);
   padding-bottom: var(--ws-4);
   gap: var(--ws-4);
+} */
+
+.recents {
+  display: grid;
+  grid-auto-flow: column;
+  height: fit-content;
+  padding: var(--ws-4) 0px;
+  gap: var(--ws-2);
 }
 
 .recent {

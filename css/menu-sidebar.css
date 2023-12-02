@@ -96,6 +96,10 @@
   color: var(--clr-accent);
 }
 
+.food-add-btn-container {
+  position: relative;
+}
+
 .food-add-btn {
   border-radius: 100px;
   background: linear-gradient(
@@ -108,6 +112,23 @@
   );
   color: #f6f6f6;
   padding: var(--ws-2) var(--ws-4);
+}
+
+.food-increment-decrement-btn {
+  border: 1px solid var(--clr-accent);
+  padding: var(--ws-1) var(--ws-2);
+  border-radius: 100px;
+  position: absolute;
+  left: 65%;
+  background-color: var(--clr-primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.food-increment-decrement-btn.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .food-items-display-list svg rect,
@@ -372,6 +393,48 @@
   width: 100%;
 }
 
+
+/*==== basket section ===*/
+.incre-decre-btn {
+  gap: var(--ws-3);
+  border: 1px solid var(--clr-accent);
+  width: fit-content;
+  padding: var(--ws-1) var(--ws-2);
+  border-radius: 100px;
+}
+
+.incre-decre-btn button {
+  color: var(--clr-accent);
+  font-size: 1.2rem;
+}
+
+.floating-basket {
+  width: 400px;
+  max-height: 400px;
+  padding: var(--ws-reg) 0px;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--clr-primary);
+  position: fixed;
+  z-index: var(--z-1);
+  overflow-y: scroll;
+  overflow-x: auto;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.floating-basket.render {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.basket-content {
+  gap: var(--ws-reg);
+}
+
+
 @media screen and (max-width: 1115px) {
   .food-items-veg-carn {
     display: none;
@@ -454,7 +517,8 @@
   }
 
   .food {
-    width: fit-content;
+    /* width: fit-content; */
+    gap: var(--ws-2);
   }
 }
 

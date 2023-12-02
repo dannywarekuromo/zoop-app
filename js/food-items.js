@@ -1,0 +1,56 @@
+const foodItems = [
+    {
+        id: 0,
+        name: "Veg Meals",
+        price: "250",
+        rating: 4.2,
+        instock: 12,
+        bestseller: true,
+        imgSrc: "../assets/Rectangle 72.png",
+    },
+    {
+        id: 1,
+        name: "Biryana",
+        price: "100",
+        rating: 2.6,
+        instock: 24,
+        bestseller: false,
+        imgSrc: "../assets/Rectangle 72 (1).png",
+    },
+    {
+        id: 2,
+        name: "Egg Meals",
+        price: "200",
+        rating: 4.0,
+        instock: 7,
+        bestseller: true,
+        imgSrc: "../assets/food.png"
+    },
+    {
+        id: 3,
+        name: "Veg Meals",
+        price: "320",
+        rating: 4.6,
+        instock: 11,
+        bestseller: true,
+        imgSrc: "../assets/Rectangle 72.png",
+    },
+    {
+        id: 4,
+        name: "Double Egg Roll",
+        price: "250",
+        rating: 4.2,
+        instock: 4,
+        bestseller: true,
+        imgSrc: "../assets/Rectangle 72 (1).png",
+    },
+    {
+        id: 5,
+        name: "Curried Rice",
+        price: "300",
+        rating: 4.0,
+        instock: 11,
+        bestseller: true,
+        imgSrc: "../assets/food.png"
+    },
+]
