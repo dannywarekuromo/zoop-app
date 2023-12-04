@@ -206,3 +206,16 @@ rightRecentBtn.addEventListener("click", recentToRight);
 leftRecentBtn.addEventListener("click", recentToLeft);
 
 
+/*=== display stories ===*/
+const stories = document.querySelectorAll(".story");
+
+stories.forEach((story) => {
+  story.addEventListener("click", () => {
+
+  })
+})
+const storySlider = () => {
+  
+}
+
+

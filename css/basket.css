@@ -1,0 +1,4 @@
+.basket-container {
+    padding: var(--ws-4) var(--ws-auto);
+    width: 100%;
+}

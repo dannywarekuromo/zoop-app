@@ -574,10 +574,12 @@ section {
   width: 68px;
   height: 68px;
   background-color: var(--clr-primary);
+  padding: .1rem;
   border-radius: 50%;
   box-shadow: -3px -3px 5px 0px rgba(143, 148, 155, 0.75);
   -webkit-box-shadow: -3px -3px 5px 0px rgba(143, 148, 155, 0.75);
   -moz-box-shadow: -3px -3px 5px 0px rgba(143, 148, 155, 0.75);
+  border: 2px solid var(--clr-accent);
 }
 
 .story-teller {
@@ -586,28 +588,82 @@ section {
 }
 
 /*=== story full classes ===*/
-.story-full-curtain {
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: var(--z-2);
-  background-color: rgba(143, 148, 155, 0.75);
-  /* display: none; */
-}
-
-.story-full-content {
-  padding: 0 var(--ws-auto);
-  position: absolute;
+.story-items {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  gap: var(--ws-4);
+  width: 400px;
+  min-height: 580px;
+  padding: var(--ws-reg);
+  z-index: var(--z-1);
+  overflow: hidden;
+  display: none;
+
+  /* background-color: var(--clr-accent); */
 }
 
-.story-full-img {
-  height: 100%;
+.story-minute-span {
+  height: 0.3rem;
+  background-color: var(--clr-accent);
+  position: absolute;
+  animation: timeline 3s linear forwards;
+}
+
+@keyframes timeline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.close-story {
+  position: absolute;
+  width: fit-content;
+  right: var(--ws-3);
+}
+
+.story-skip-btn {
+  position: absolute;
+  width: 95%;
+  top: 50%;
+  padding: 0px var(--ws-3);
+}
+
+.story-skip-btn a {
+  /* background-color: ; */
+  border-radius: 1rem;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.story-skip-btn a:hover {
+  background-color: #8f949b99;
+}
+
+.story-items img {
   width: 100%;
+  height: 100%;
+}
+
+.story-img-container {
+  width: 400px;
+  height: 580px;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.story-img-content {
+  width: 400px;
+  height: 580px;
+}
+
+.story-img-content img {
+  width: 100%;
+  height: 100%;
 }
 
 /*=== favorites section ===*/
@@ -925,7 +981,7 @@ section {
     border-radius: 100px;
     background: linear-gradient(135deg, #dfdfdf 0%, #fff 100%);
     display: flex;
-    z-index: var(--z-1);
+    z-index: var(--z-2);
   }
 
   .restaurant-container {

@@ -374,7 +374,7 @@
   padding: var(--ws-3);
   width: fit-content;
   position: absolute;
-  bottom: -50%;
+  bottom: 0%;
   transition: all 0.3s ease;
 }
 
@@ -395,6 +395,21 @@
 
 
 /*==== basket section ===*/
+.basket-header {
+  width: 100%;
+}
+
+.basket-quickpay-btn {
+  width: 100%;
+  background: linear-gradient( 90deg, #ff6315 0%, #ff411c 25%, #ff1d23 50%, #ff0728 75%, #ff002a 100% );
+  padding: var(--ws-2);
+  border-radius: 5px;
+}
+
+.basket-quickpay-btn p {
+  color: var(--clr-primary);
+}
+
 .incre-decre-btn {
   gap: var(--ws-3);
   border: 1px solid var(--clr-accent);
@@ -409,9 +424,9 @@
 }
 
 .floating-basket {
-  width: 400px;
-  max-height: 400px;
-  padding: var(--ws-reg) 0px;
+  width: fit-content;
+  height: fit-content;
+  padding: var(--ws-reg);
   border-radius: 30px;
   top: 50%;
   left: 50%;
@@ -419,16 +434,32 @@
   background-color: var(--clr-primary);
   position: fixed;
   z-index: var(--z-1);
-  overflow-y: scroll;
-  overflow-x: auto;
+  /* overflow-y: scroll; */
   pointer-events: none;
   opacity: 0;
+  transition: 0.3s;
 }
 
 .floating-basket.render {
   pointer-events: all;
   opacity: 1;
 }
+
+.basket-container {
+  /* background-color: var(--clr-accent); */
+  width: 400px;
+  max-height: 400px;
+  padding: var(--ws-3);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.basket-container::-webkit-scrollbar {
+  display: none;
+}
+
 
 .basket-content {
   gap: var(--ws-reg);
@@ -468,10 +499,30 @@
     flex-direction: column-reverse;
   }
 
-  .food-sidebar-order-container,
-  .food-sidebar-payment-summary,
-  .food-sidebar-btn-space {
+  .food-sidebar-summary-container,
+  .food-sidebar-payment-total,
+  .food-sidebar-summary-title {
     display: none;
+  }
+
+  .food-sidebar-payment-summary {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0px;
+    background-color: transparent;
+    width: 50%;
+  }
+
+
+
+  .food-sidebar-btn-space {
+    position: fixed;
+    bottom: 7%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%,-50%);
   }
 
   .food-sidebar-text {
@@ -522,6 +573,28 @@
   }
 }
 
+
+@media screen and (max-width: 662px) {
+
+  .food-sidebar-btn-space {
+    width: 330px;
+  }
+
+  .food-sidebar-payment-summary {
+    width: 90%;
+  }
+
+  .floating-basket {
+    width: 90vw;
+  }
+
+  .basket-container {
+    /* background-color: var(--clr-accent); */
+    width: 80vw;
+    max-height: 400px;
+  }
+}
+
 @media screen and (max-width: 440px) {
   .food-items-header {
     align-items: end;
@@ -549,4 +622,8 @@
   .food-add-btn-container {
     justify-content: flex-start;
   }
+}
+
+.mobile-nav {
+  display: none;
 }

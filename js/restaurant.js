@@ -1,11 +1,13 @@
-/*=== global variable ===*/
+/*=== restaurant global variable ===*/
 const foodItemsContainer = document.querySelector(".food-items-content");
 const gridItemsContainer = document.querySelector(".food-items-grid-content");
 const foodSideBarMenu = document.querySelector(".food-sidebar-menu-list");
 const foodBasketItems = document.querySelector(".food-sidebar-view-items");
 const foodBasketPrice = document.querySelector(".food-sidebar-payment-total");
 const foodBasketTotal = document.querySelector(".food-sidebar-basket-total");
+const foodViewBasket = document.querySelector(".food-sidebar-view-basket");
 const basketContent = document.querySelector(".basket-content");
+const floatingBasket = document.querySelector(".floating-basket");
 
 /*=== render food items ===*/
 const displayFoodItems = () => {
@@ -102,8 +104,9 @@ function addToBasket(id) {
 
 /*=== update Basket ===*/
 function updateBasket() {
-  displayBasketItems();
+  populateBasketContent();
   displayBasketTotal();
+  populateBasketPageContent();
 }
 
 /*=== calculate and display basket total price and items ===*/
@@ -117,7 +120,6 @@ function displayBasketTotal() {
     totalPrice += item.price * item.numberOfUnits;
     totalItems += item.numberOfUnits;
   });
-
 
   foodBasketTotal.innerHTML = `
   <p class="food-sidebar-basket-total-p text-sl-dark">
@@ -139,8 +141,12 @@ function displayBasketTotal() {
   `;
 }
 
+foodViewBasket.addEventListener("click", (e) => {
+    floatingBasket.classList.toggle("render");
+})
+
 /*=== display basket items ===*/
-function displayBasketItems() {
+function populateBasketContent() {
   basketContent.innerHTML = ""; //clear basket content
   basket.forEach((item) => {
     basketContent.innerHTML += `
@@ -190,7 +196,7 @@ function displayBasketItems() {
         </div>
     </div>
     <p class="food-name text-normal">${item.name}</p>
-    <p class="food-price text-sl-dark">${item.price}</p>
+    <p class="food-price text-sl-dark">₹${item.price}</p>
     <div class="basket-btn-container flex-right container">
        <div class="incre-decre-btn flex">
           <button class="decrement-btn btn" onclick="changeUnitNumber('minus', ${item.id})">-</button>
@@ -251,3 +257,70 @@ const displayFoodMenu = () => {
 };
 
 displayFoodMenu();
+
+/*=== basket global variable ===*/
+const basketPageContent = document.querySelector(".basket-page-content");
+
+function populateBasketPageContent() {
+  basketPageContent.innerHTML = ""; //clear basket content
+
+  basket.forEach((item) => {
+    basketPageContent.innerHTML += `
+    <div class="basket-item flex-center">
+    <div class="food-img container">
+        <img src="${item.imgSrc}" alt="${item.name}"/>
+    </div>
+    <div class="food-details flex-column">
+      <div class="food-rating-fav flex">
+        <div class="food-rating flex text-sm">
+          <div class="food-rating-content flex-sm">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="14"
+            viewBox="0 0 15 14"
+            fill="none"
+            >
+            <path
+                d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
+                fill="#f6f6f6"
+            />
+            </svg>
+            <p class="food-rating-figure">4.2</p>
+          </div>
+          <div class="food-rating-status flex-sm">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="20"
+            viewBox="0 0 21 20"
+            fill="none"
+            >
+            <rect
+                x="1.66211"
+                y="1"
+                width="18"
+                height="18"
+                rx="3"
+                stroke="#EA4335"
+                stroke-width="2"
+            />
+            <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
+            </svg>
+            <p class="foot-rating-status-p">Bestseller</p>
+          </div>
+        </div>
+    </div>
+    <p class="food-name text-normal">${item.name}</p>
+    <p class="food-price text-sl-dark">₹${item.price}</p>
+    <div class="basket-btn-container flex-right container">
+       <div class="incre-decre-btn flex">
+          <button class="decrement-btn btn" onclick="changeUnitNumber('minus', ${item.id})">-</button>
+          <p class="basket-item-count text-normal">${item.numberOfUnits}</p>
+          <button class="increment-btn btn" onclick="changeUnitNumber('plus', ${item.id})">+</button>
+       </div>
+    </div>
+  </div>
+    `;
+  });
+}
