@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoop || Basket</title>
-    <link rel="stylesheet" href="../css/menu-sidebar.css" />
     <link rel="stylesheet" href="../css/basket.css" />
     <script src="../js/script.js" defer></script>
+    <script src="../js/menu-sidebar.js" defer></script>
   </head>
   <body>
     <div class="curtain"></div>
     <!-- header  -->
     <header class="container header flex-between">
       <div class="logo-container">
-        <a href="../index.html" class="logo-link">
+        <a href="index.html" class="logo-link">
           <svg
             width="50"
             height="64"
@@ -133,7 +133,6 @@
           </svg>
           <p class="address-name text-md">Home</p>
           <svg
-            class="address-pointer-svg"
             width="18"
             height="18"
             viewBox="0 0 18 18"
@@ -171,12 +170,12 @@
             </div>
           </div>
           <div class="address-list-item">
-            <a href="#" class="address-list-link list-link active flex-between">
+            <a href="#" class="address-list-link flex-between">
               <div class="address-location flex-column">
                 <p class="address-list-title active text-normal">Home</p>
                 <p class="address-list-location text-sl">
                   9th F main, BTM Layout 1st,<br />
-                  Bengaluru
+                  Bengaluru - 560029
                 </p>
               </div>
               <svg
@@ -188,16 +187,16 @@
               >
                 <path
                   d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-                  fill="#5C5F6470"
+                  fill="#FF1D23"
                 />
               </svg>
             </a>
-            <a href="#" class="address-list-link list-link flex-between">
+            <a href="#" class="address-list-link flex-between">
               <div class="address-location flex-column">
                 <p class="address-list-title text-normal">Office</p>
                 <p class="address-list-location text-sl">
                   9th F main, BTM Layout 1st,<br />
-                  Bengaluru
+                  Bengaluru - 560029
                 </p>
               </div>
               <svg
@@ -213,12 +212,12 @@
                 />
               </svg>
             </a>
-            <a href="#" class="address-list-link list-link flex-between">
+            <a href="#" class="address-list-link flex-between">
               <div class="address-location flex-column">
                 <p class="address-list-title text-normal">Work</p>
                 <p class="address-list-location text-sl">
                   9th F main, BTM Layout 1st,<br />
-                  Bengaluru
+                  Bengaluru - 560029
                 </p>
               </div>
               <svg
@@ -239,7 +238,7 @@
       </div>
 
       <nav class="header-nav flex">
-        <a href="../index.html" class="header-nav-link flex">
+        <a href="#" class="header-nav-link flex">
           <svg
             class="home-icon"
             width="24"
@@ -250,20 +249,20 @@
           >
             <path
               d="M12.0001 2.08209C12.6495 2.08209 13.2707 2.13856 13.8918 2.2515C13.8918 2.1668 13.9201 2.08209 13.9201 1.99739C13.9201 0.952684 13.073 0.0773926 12.0001 0.0773926C10.9271 0.0773926 10.0801 0.924449 10.0801 1.99739C10.0801 2.08209 10.0801 2.1668 10.1083 2.2515C10.7295 2.13856 11.3507 2.08209 12.0001 2.08209Z"
-              fill="#8F949B"
+              fill="#FF1D23"
             />
             <path
               d="M13.9062 3.18601C13.2851 3.07307 12.6639 3.0166 12.0145 3.0166C11.3651 3.0166 10.7439 3.07307 10.1227 3.18601C5.26628 4.08954 1.5957 8.32482 1.5957 13.4354H22.405C22.4333 8.32482 18.7627 4.0613 13.9062 3.18601ZM12.438 4.82365C16.1086 4.82365 20.1462 8.18364 20.1462 11.8542H16.4192C16.4192 8.18364 8.76744 4.82365 12.438 4.82365Z"
-              fill="#8F949B"
+              fill="#FF1D23"
             />
             <path
               d="M0 14.2007L0.847056 15.923H23.1529L23.9999 14.2007H0Z"
-              fill="#8F949B"
+              fill="#FF1D23"
             />
           </svg>
-          <p class="text-sm header-nav-link-p">Home</p>
+          <p class="text-sm header-nav-link-p active">Home</p>
         </a>
-        <a href="../pages/favorites.html" class="header-nav-link flex">
+        <a href="#" class="header-nav-link flex">
           <svg
             width="24"
             height="24"
@@ -278,7 +277,7 @@
           </svg>
           <p class="text-sm header-nav-link-p">Favorites</p>
         </a>
-        <a href="#" class="header-nav-link flex">
+        <a class="header-nav-link flex">
           <svg
             width="24"
             height="24"
@@ -288,259 +287,44 @@
           >
             <path
               d="M19.24 5.58006H18.84L15.46 2.20006C15.19 1.93006 14.75 1.93006 14.47 2.20006C14.2 2.47006 14.2 2.91006 14.47 3.19006L16.86 5.58006H7.14L9.53 3.19006C9.8 2.92006 9.8 2.48006 9.53 2.20006C9.26 1.93006 8.82 1.93006 8.54 2.20006L5.17 5.58006H4.77C3.87 5.58006 2 5.58006 2 8.14006C2 9.11006 2.2 9.75006 2.62 10.1701C2.86 10.4201 3.15 10.5501 3.46 10.6201C3.75 10.6901 4.06 10.7001 4.36 10.7001H19.64C19.95 10.7001 20.24 10.6801 20.52 10.6201C21.36 10.4201 22 9.82006 22 8.14006C22 5.58006 20.13 5.58006 19.24 5.58006Z"
-              fill="#FF1D23"
+              fill="#8F949B"
             />
             <path
               d="M19.0506 12H4.87064C4.25064 12 3.78064 12.55 3.88064 13.16L4.72064 18.3C5.00064 20.02 5.75064 22 9.08064 22H14.6906C18.0606 22 18.6606 20.31 19.0206 18.42L20.0306 13.19C20.1506 12.57 19.6806 12 19.0506 12ZM10.6106 18.45C10.6106 18.84 10.3006 19.15 9.92064 19.15C9.53064 19.15 9.22064 18.84 9.22064 18.45V15.15C9.22064 14.77 9.53064 14.45 9.92064 14.45C10.3006 14.45 10.6106 14.77 10.6106 15.15V18.45ZM14.8906 18.45C14.8906 18.84 14.5806 19.15 14.1906 19.15C13.8106 19.15 13.4906 18.84 13.4906 18.45V15.15C13.4906 14.77 13.8106 14.45 14.1906 14.45C14.5806 14.45 14.8906 14.77 14.8906 15.15V18.45Z"
-              fill="#FF1D23"
+              fill="#8F949B"
             />
           </svg>
-          <p class="text-sm header-nav-link-p active">Basket</p>
+          <p class="text-sm header-nav-link-p">Basket</p>
         </a>
       </nav>
       <div class="header-app-search">
         <form class="app-search flex-between">
           <input
             class="search-input container"
-            type="text"
+            type="search"
             id="appsearch"
             name="appsearch"
             placeholder="Search restaurants, food, etc"
           />
           <button type="submit" class="app-search-btn">
-            <img src="../assets/search.svg" alt="search icon" />
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="Vector"
+                d="M19.6561 18.1081L16.0689 14.5455C18.8699 10.9584 18.5751 5.84774 15.3563 2.62907C13.6609 0.933702 11.4005 0 8.99269 0C6.58488 0 4.3244 0.933702 2.62907 2.62907C0.933702 4.32444 0 6.58484 0 8.99269C0 11.4005 0.933702 13.661 2.62907 15.3563C4.32444 17.0517 6.58484 17.9854 8.99269 17.9854C10.9828 17.9854 12.9485 17.322 14.5209 16.0689L18.0835 19.6805C18.3046 19.9016 18.5749 20 18.8699 20C19.1646 20 19.4349 19.8771 19.6562 19.6805C20.0984 19.2629 20.0984 18.5504 19.656 18.1081L19.6561 18.1081ZM15.7741 8.99265C15.7741 10.8109 15.0617 12.5061 13.784 13.7838C12.5063 15.0615 10.7865 15.7739 8.99287 15.7739C7.19926 15.7739 5.47945 15.0615 4.20173 13.7838C2.924 12.5061 2.2116 10.7863 2.2116 8.99265C2.2116 7.17443 2.92404 5.47923 4.20173 4.20151C5.47941 2.92378 7.19926 2.21138 8.99287 2.21138C10.8111 2.21138 12.5063 2.92383 13.784 4.20151C15.0615 5.47901 15.7741 7.17439 15.7741 8.99265Z"
+                fill="#8F949B"
+              />
+            </svg>
           </button>
         </form>
-        <div class="search-history flex-column">
-          <div class="search-history-header flex-between">
-            <p class="search-history-title text-normal">Past searches</p>
-            <button class="search-history-clear-btn text-accent-sm">
-              Clear
-            </button>
-          </div>
-          <div class="search-history-restaurants flex-column">
-            <div class="search-history-restaurant-container container">
-              <div class="search-history-restaurant-content">
-                <div class="search-history-restaurant flex btn">
-                  <div class="search-history-restaurant-img">
-                    <img src="../assets/kumar.png" alt="kumar logo image" />
-                  </div>
-                  <div class="search-history-restaurant-details flex-column">
-                    <p class="search-history-restaurant-name text-normal">
-                      Kumar's Hotel
-                    </p>
-                    <div class="search-history-rating-dish flex-sm">
-                      <div class="search-history-rating flex-sm text-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#5C5F64"
-                          />
-                        </svg>
-                        <p class="search-history-rating-figure">4.2</p>
-                      </div>
-                      <span class="span-space"></span>
-                      <p class="text-sm">Chinese</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="search-history-restaurant flex btn">
-                  <div class="search-history-restaurant-img">
-                    <img src="../assets/lavish.png" alt="kumar logo image" />
-                  </div>
-                  <div class="search-history-restaurant-details flex-column">
-                    <p class="search-history-restaurant-name text-normal">
-                      Kumar's Hotel
-                    </p>
-                    <div class="search-history-rating-dish flex-sm">
-                      <div class="search-history-rating flex-sm text-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#5C5F64"
-                          />
-                        </svg>
-                        <p class="search-history-rating-figure">4.2</p>
-                      </div>
-                      <span class="span-space"></span>
-                      <p class="text-sm">Chinese</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="search-history-restaurant flex btn">
-                  <div class="search-history-restaurant-img">
-                    <img src="../assets/rea.png" alt="kumar logo image" />
-                  </div>
-                  <div class="search-history-restaurant-details flex-column">
-                    <p class="search-history-restaurant-name text-normal">
-                      Kumar's Hotel
-                    </p>
-                    <div class="search-history-rating-dish flex-sm">
-                      <div class="search-history-rating flex-sm text-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#5C5F64"
-                          />
-                        </svg>
-                        <p class="search-history-rating-figure">4.2</p>
-                      </div>
-                      <span class="span-space"></span>
-                      <p class="text-sm">Chinese</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="search-history-restaurant flex btn">
-                  <div class="search-history-restaurant-img">
-                    <img src="../assets/lavish.png" alt="kumar logo image" />
-                  </div>
-                  <div class="search-history-restaurant-details flex-column">
-                    <p class="search-history-restaurant-name text-normal">
-                      Kumar's Hotel
-                    </p>
-                    <div class="search-history-rating-dish flex-sm">
-                      <div class="search-history-rating flex-sm text-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#5C5F64"
-                          />
-                        </svg>
-                        <p class="search-history-rating-figure">4.2</p>
-                      </div>
-                      <span class="span-space"></span>
-                      <p class="text-sm">Chinese</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="search-history-restaurant flex btn">
-                  <div class="search-history-restaurant-img">
-                    <img src="../assets/rea.png" alt="kumar logo image" />
-                  </div>
-                  <div class="search-history-restaurant-details flex-column">
-                    <p class="search-history-restaurant-name text-normal">
-                      Kumar's Hotel
-                    </p>
-                    <div class="search-history-rating-dish flex-sm">
-                      <div class="search-history-rating flex-sm text-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#5C5F64"
-                          />
-                        </svg>
-                        <p class="search-history-rating-figure">4.2</p>
-                      </div>
-                      <span class="span-space"></span>
-                      <p class="text-sm">Chinese</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="search-history-restaurant flex btn">
-                  <div class="search-history-restaurant-img">
-                    <img src="../assets/kumar.png" alt="kumar logo image" />
-                  </div>
-                  <div class="search-history-restaurant-details flex-column">
-                    <p class="search-history-restaurant-name text-normal">
-                      Kumar's Hotel
-                    </p>
-                    <div class="search-history-rating-dish flex-sm">
-                      <div class="search-history-rating flex-sm text-sm">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                            fill="#5C5F64"
-                          />
-                        </svg>
-                        <p class="search-history-rating-figure">4.2</p>
-                      </div>
-                      <span class="span-space"></span>
-                      <p class="text-sm">Chinese</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="search-history-closest-restaurant">
-            <div class="search-history-closest-title">
-              <p class="search-history-closest-p text-normal">
-                Nearest Restaurant
-              </p>
-            </div>
-            <div class="search-history-closest-list">
-              <div class="search-history-closest-item btn flex">
-                <div class="search-history-closest-img">
-                  <img src="../assets/food.png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-closest-details flex-column">
-                  <p class="search-history-closest-name text-sl-dark">
-                    Maharashtra Lunch Home
-                  </p>
-                  <p class="search-history-closest-type text-sm">Restaurant</p>
-                </div>
-              </div>
-              <div class="search-history-closest-item btn flex">
-                <div class="search-history-closest-img">
-                  <img src="../assets/dish (1).png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-closest-details flex-column">
-                  <p class="search-history-closest-name text-sl-dark">
-                    Kumar's Hotel
-                  </p>
-                  <p class="search-history-closest-type text-sm">Hotel</p>
-                </div>
-              </div>
-              <div class="search-history-closest-item btn flex">
-                <div class="search-history-closest-img">
-                  <img src="../assets/dish-1.png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-closest-details flex-column">
-                  <p class="search-history-closest-name text-sl-dark">
-                    Maharashtra Lunch Home
-                  </p>
-                  <p class="search-history-closest-type text-sm">Restaurant</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ul class="search-history">
+          <li class="search-history-list">chinese</li>
+        </ul>
       </div>
 
       <div class="profile flex-center">
@@ -549,266 +333,562 @@
     </header>
 
     <!-- floating mobile search bar -->
-    <div class="mobile-search container flex-column">
-      <div class="mobile-form-container">
-        <form class="mobile-app-search flex-between">
-          <input
-            class="mobile-search-input container"
-            type="text"
-            id="mobileappsearch"
-            name="mobileappsearch"
-            placeholder="Search restaurants, food, etc"
-          />
-          <button type="submit" class="mobile-search-btn flex">
-            <img src="../assets/search.svg" alt="search icon" />
-          </button>
-        </form>
-      </div>
-
-      <div class="mobile-search-history">
-        <div class="search-history-header flex-between">
-          <p class="search-history-title text-normal">Past searches</p>
-          <button class="search-history-clear-btn text-accent-sm">Clear</button>
-        </div>
-        <div class="search-history-restaurants flex-column">
-          <div class="search-history-restaurant-container container">
-            <div class="search-history-restaurant-content">
-              <div class="search-history-restaurant flex btn">
-                <div class="search-history-restaurant-img">
-                  <img src="../assets/kumar.png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-restaurant-details flex-column">
-                  <p class="search-history-restaurant-name text-normal">
-                    Kumar's Hotel
-                  </p>
-                  <div class="search-history-rating-dish flex-sm">
-                    <div class="search-history-rating flex-sm text-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="14"
-                        viewBox="0 0 15 14"
-                        fill="none"
-                      >
-                        <path
-                          d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                      <p class="search-history-rating-figure">4.2</p>
-                    </div>
-                    <span class="span-space"></span>
-                    <p class="text-sm">Chinese</p>
-                  </div>
-                </div>
-              </div>
-              <div class="search-history-restaurant flex btn">
-                <div class="search-history-restaurant-img">
-                  <img src="../assets/lavish.png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-restaurant-details flex-column">
-                  <p class="search-history-restaurant-name text-normal">
-                    Kumar's Hotel
-                  </p>
-                  <div class="search-history-rating-dish flex-sm">
-                    <div class="search-history-rating flex-sm text-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="14"
-                        viewBox="0 0 15 14"
-                        fill="none"
-                      >
-                        <path
-                          d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                      <p class="search-history-rating-figure">4.2</p>
-                    </div>
-                    <span class="span-space"></span>
-                    <p class="text-sm">Chinese</p>
-                  </div>
-                </div>
-              </div>
-              <div class="search-history-restaurant flex btn">
-                <div class="search-history-restaurant-img">
-                  <img src="../assets/rea.png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-restaurant-details flex-column">
-                  <p class="search-history-restaurant-name text-normal">
-                    Kumar's Hotel
-                  </p>
-                  <div class="search-history-rating-dish flex-sm">
-                    <div class="search-history-rating flex-sm text-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="14"
-                        viewBox="0 0 15 14"
-                        fill="none"
-                      >
-                        <path
-                          d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                      <p class="search-history-rating-figure">4.2</p>
-                    </div>
-                    <span class="span-space"></span>
-                    <p class="text-sm">Chinese</p>
-                  </div>
-                </div>
-              </div>
-              <div class="search-history-restaurant flex btn">
-                <div class="search-history-restaurant-img">
-                  <img src="../assets/lavish.png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-restaurant-details flex-column">
-                  <p class="search-history-restaurant-name text-normal">
-                    Kumar's Hotel
-                  </p>
-                  <div class="search-history-rating-dish flex-sm">
-                    <div class="search-history-rating flex-sm text-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="14"
-                        viewBox="0 0 15 14"
-                        fill="none"
-                      >
-                        <path
-                          d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                      <p class="search-history-rating-figure">4.2</p>
-                    </div>
-                    <span class="span-space"></span>
-                    <p class="text-sm">Chinese</p>
-                  </div>
-                </div>
-              </div>
-              <div class="search-history-restaurant flex btn">
-                <div class="search-history-restaurant-img">
-                  <img src="../assets/rea.png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-restaurant-details flex-column">
-                  <p class="search-history-restaurant-name text-normal">
-                    Kumar's Hotel
-                  </p>
-                  <div class="search-history-rating-dish flex-sm">
-                    <div class="search-history-rating flex-sm text-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="14"
-                        viewBox="0 0 15 14"
-                        fill="none"
-                      >
-                        <path
-                          d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                      <p class="search-history-rating-figure">4.2</p>
-                    </div>
-                    <span class="span-space"></span>
-                    <p class="text-sm">Chinese</p>
-                  </div>
-                </div>
-              </div>
-              <div class="search-history-restaurant flex btn">
-                <div class="search-history-restaurant-img">
-                  <img src="../assets/kumar.png" alt="kumar logo image" />
-                </div>
-                <div class="search-history-restaurant-details flex-column">
-                  <p class="search-history-restaurant-name text-normal">
-                    Kumar's Hotel
-                  </p>
-                  <div class="search-history-rating-dish flex-sm">
-                    <div class="search-history-rating flex-sm text-sm">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="14"
-                        viewBox="0 0 15 14"
-                        fill="none"
-                      >
-                        <path
-                          d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
-                          fill="#5C5F64"
-                        />
-                      </svg>
-                      <p class="search-history-rating-figure">4.2</p>
-                    </div>
-                    <span class="span-space"></span>
-                    <p class="text-sm">Chinese</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="search-history-closest-restaurant">
-          <div class="search-history-closest-title">
-            <p class="search-history-closest-p text-normal">
-              Nearest Restaurant
-            </p>
-          </div>
-          <div class="search-history-closest-list">
-            <div class="search-history-closest-item btn flex">
-              <div class="search-history-closest-img">
-                <img src="../assets/food.png" alt="kumar logo image" />
-              </div>
-              <div class="search-history-closest-details flex-column">
-                <p class="search-history-closest-name text-sl-dark">
-                  Maharashtra Lunch Home
-                </p>
-                <p class="search-history-closest-type text-sm">Restaurant</p>
-              </div>
-            </div>
-            <div class="search-history-closest-item btn flex">
-              <div class="search-history-closest-img">
-                <img src="../assets/dish (1).png" alt="kumar logo image" />
-              </div>
-              <div class="search-history-closest-details flex-column">
-                <p class="search-history-closest-name text-sl-dark">
-                  Kumar's Hotel
-                </p>
-                <p class="search-history-closest-type text-sm">Hotel</p>
-              </div>
-            </div>
-            <div class="search-history-closest-item btn flex">
-              <div class="search-history-closest-img">
-                <img src="../assets/dish-1.png" alt="kumar logo image" />
-              </div>
-              <div class="search-history-closest-details flex-column">
-                <p class="search-history-closest-name text-sl-dark">
-                  Maharashtra Lunch Home
-                </p>
-                <p class="search-history-closest-type text-sm">Restaurant</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="mobile-search flex-column">
+      <form class="mobile-app-search flex-between">
+        <input
+          class="mobile-search-input container"
+          type="search"
+          id="mobileappsearch"
+          name="mobileappsearch"
+          placeholder="Search restaurants, food, etc"
+        />
+        <button type="submit" class="mobile-search-btn flex">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Vector"
+              d="M19.6561 18.1081L16.0689 14.5455C18.8699 10.9584 18.5751 5.84774 15.3563 2.62907C13.6609 0.933702 11.4005 0 8.99269 0C6.58488 0 4.3244 0.933702 2.62907 2.62907C0.933702 4.32444 0 6.58484 0 8.99269C0 11.4005 0.933702 13.661 2.62907 15.3563C4.32444 17.0517 6.58484 17.9854 8.99269 17.9854C10.9828 17.9854 12.9485 17.322 14.5209 16.0689L18.0835 19.6805C18.3046 19.9016 18.5749 20 18.8699 20C19.1646 20 19.4349 19.8771 19.6562 19.6805C20.0984 19.2629 20.0984 18.5504 19.656 18.1081L19.6561 18.1081ZM15.7741 8.99265C15.7741 10.8109 15.0617 12.5061 13.784 13.7838C12.5063 15.0615 10.7865 15.7739 8.99287 15.7739C7.19926 15.7739 5.47945 15.0615 4.20173 13.7838C2.924 12.5061 2.2116 10.7863 2.2116 8.99265C2.2116 7.17443 2.92404 5.47923 4.20173 4.20151C5.47941 2.92378 7.19926 2.21138 8.99287 2.21138C10.8111 2.21138 12.5063 2.92383 13.784 4.20151C15.0615 5.47901 15.7741 7.17439 15.7741 8.99265Z"
+              fill="#8F949B"
+            />
+          </svg>
+        </button>
+      </form>
+      <ul class="mobile-search-history">
+        <li class="mobile-search-history-list">chinese</li>
+      </ul>
     </div>
+
     <main>
-      <!-- basket section -->
-      <section class="basket-container">
-        <div class="basket-header flex-between">
-          <p class="basket-header-title text-ml">My food basket</p>
-          <a class="restaurant-contact text-accent">Call restaurant</a>
-        </div>
-        <div class="basket-content-sidebar">
-          <div class="basket-page-content">
-            <!-- render basket items here -->
+      <!-- category section -->
+      <section class="basket-section">
+        <!-- category header -->
+        <div class="category-items-header flex-between">
+          <a
+            href="./restaurant.html"
+            class="category-items-display flex-center"
+          >
+            <div class="food-items-display-style flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="11"
+                viewBox="0 0 18 11"
+                fill="none"
+              >
+                <path
+                  d="M16.9534 4.42926H8.36102V1.49464C8.36102 0.727942 7.54144 0.252058 6.88049 0.635409L0.773311 4.16488C-0.25777 4.75974 -0.25777 6.24027 0.773311 6.83512L6.88049 10.3646C7.54144 10.7479 8.36102 10.2721 8.36102 9.50536V6.39889H17.0062C17.5614 6.39889 18.0109 5.94945 17.9977 5.38103C17.9712 4.85227 17.4953 4.42926 16.9534 4.42926Z"
+                  fill="#5C5F64"
+                />
+              </svg>
+            </div>
+            <p class="category-items-title text-ml">My food basket</p>
+          </a>
+          <div class="category-items-category flex">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+                fill="url(#paint0_linear_2245_3034)"
+              />
+              <path
+                d="M21.9701 18.33C21.9701 18.61 21.9201 18.9 21.8201 19.18C21.7901 19.26 21.7601 19.34 21.7201 19.42C21.5501 19.78 21.3301 20.12 21.0401 20.44C20.5501 20.98 20.0101 21.37 19.4001 21.62C19.3901 21.62 19.3801 21.63 19.3701 21.63C18.7801 21.87 18.1401 22 17.4501 22C16.4301 22 15.3401 21.76 14.1901 21.27C13.0401 20.78 11.8901 20.12 10.7501 19.29C10.3601 19 9.9701 18.71 9.6001 18.4L12.8701 15.13C13.1501 15.34 13.4001 15.5 13.6101 15.61C13.6601 15.63 13.7201 15.66 13.7901 15.69C13.8701 15.72 13.9501 15.73 14.0401 15.73C14.2101 15.73 14.3401 15.67 14.4501 15.56L15.2101 14.81C15.4601 14.56 15.7001 14.37 15.9301 14.25C16.1601 14.11 16.3901 14.04 16.6401 14.04C16.8301 14.04 17.0301 14.08 17.2501 14.17C17.4701 14.26 17.7001 14.39 17.9501 14.56L21.2601 16.91C21.5201 17.09 21.7001 17.3 21.8101 17.55C21.9101 17.8 21.9701 18.05 21.9701 18.33Z"
+                fill="url(#paint1_linear_2245_3034)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_2245_3034"
+                  x1="2"
+                  y1="11.9311"
+                  x2="11.345"
+                  y2="11.9311"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FF6315" />
+                  <stop offset="0.25" stop-color="#FF411C" />
+                  <stop offset="0.5" stop-color="#FF1D23" />
+                  <stop offset="0.75" stop-color="#FF0728" />
+                  <stop offset="1" stop-color="#FF002A" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_2245_3034"
+                  x1="9.6001"
+                  y1="19.2774"
+                  x2="21.9701"
+                  y2="19.2774"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FF6315" />
+                  <stop offset="0.25" stop-color="#FF411C" />
+                  <stop offset="0.5" stop-color="#FF1D23" />
+                  <stop offset="0.75" stop-color="#FF0728" />
+                  <stop offset="1" stop-color="#FF002A" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <a href="tel:+09zoopwebsite" class="text-accent">Call restaurant</a>
           </div>
-          <div class="basket-sidebar"></div>
+        </div>
+        <div class="food-items-sidebar flex-start">
+          <!-- category items -->
+          <div class="food-items">
+            <!-- food items content -->
+            <div class="food-items-content active">
+              <div class="food flex">
+                <div class="food-img container">
+                  <img src="../assets/Rectangle 72.png" alt="" />
+                </div>
+                <div class="food-details flex-column">
+                  <div class="food-rating-fav flex">
+                    <div class="food-rating flex text-sm">
+                      <div class="food-rating-content flex-sm">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="14"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
+                            fill="#f6f6f6"
+                          />
+                        </svg>
+                        <p class="food-rating-figure">4.2</p>
+                      </div>
+                      <div class="food-rating-status flex-sm">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.66211"
+                            y="1"
+                            width="18"
+                            height="18"
+                            rx="3"
+                            stroke="#EA4335"
+                            stroke-width="2"
+                          />
+                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
+                        </svg>
+                        <p class="foot-rating-status-p">Bestseller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="food-name text-normal">French Fries</p>
+                  <p class="food-price text-sl-dark">₹250</p>
+                  <div class="food-add-btn-container container flex-right">
+                    <div class="incre-decre-btn flex">
+                      <button class="decrement-btn btn">-</button>
+                      <p class="basket-item-count text-normal">3</p>
+                      <button class="increment-btn btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="food flex-center">
+                <div class="food-img container">
+                  <img src="../assets/food.png" alt="" />
+                </div>
+                <div class="food-details flex-column">
+                  <div class="food-rating-fav flex">
+                    <div class="food-rating flex text-sm">
+                      <div class="food-rating-content flex-sm">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="14"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
+                            fill="#f6f6f6"
+                          />
+                        </svg>
+                        <p class="food-rating-figure">4.2</p>
+                      </div>
+                      <div class="food-rating-status flex-sm">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.66211"
+                            y="1"
+                            width="18"
+                            height="18"
+                            rx="3"
+                            stroke="#EA4335"
+                            stroke-width="2"
+                          />
+                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
+                        </svg>
+                        <p class="foot-rating-status-p">Bestseller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="food-name text-normal">French Fries</p>
+                  <p class="food-price text-sl-dark">₹250</p>
+                  <div class="food-add-btn-container flex-right container">
+                    <div class="incre-decre-btn flex">
+                      <button class="decrement-btn btn">-</button>
+                      <p class="basket-item-count text-normal">1</p>
+                      <button class="increment-btn btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="food flex-center">
+                <div class="food-img container">
+                  <img src="../assets/Rectangle 72 (1).png" alt="" />
+                </div>
+                <div class="food-details flex-column">
+                  <div class="food-rating-fav flex">
+                    <div class="food-rating flex text-sm">
+                      <div class="food-rating-content flex-sm">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="14"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
+                            fill="#f6f6f6"
+                          />
+                        </svg>
+                        <p class="food-rating-figure">4.2</p>
+                      </div>
+                      <div class="food-rating-status flex-sm">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.66211"
+                            y="1"
+                            width="18"
+                            height="18"
+                            rx="3"
+                            stroke="#EA4335"
+                            stroke-width="2"
+                          />
+                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
+                        </svg>
+                        <p class="foot-rating-status-p">Bestseller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="food-name text-normal">French Fries</p>
+                  <p class="food-price text-sl-dark">₹250</p>
+                  <div class="food-add-btn-container flex-right container">
+                    <div class="incre-decre-btn flex">
+                      <button class="decrement-btn btn">-</button>
+                      <p class="basket-item-count text-normal">1</p>
+                      <button class="increment-btn btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="food flex-center">
+                <div class="food-img container">
+                  <img src="../assets/Rectangle 72.png" alt="" />
+                </div>
+                <div class="food-details flex-column">
+                  <div class="food-rating-fav flex">
+                    <div class="food-rating flex text-sm">
+                      <div class="food-rating-content flex-sm">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="14"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.80068 0.385489C6.96769 -0.128497 7.69484 -0.128496 7.86185 0.385491L9.21006 4.53488C9.28475 4.76474 9.49896 4.92037 9.74065 4.92037H14.1036C14.644 4.92037 14.8687 5.61194 14.4315 5.9296L10.9018 8.49406C10.7063 8.63612 10.6245 8.88794 10.6991 9.1178L12.0474 13.2672C12.2144 13.7812 11.6261 14.2086 11.1889 13.8909L7.65918 11.3265C7.46365 11.1844 7.19888 11.1844 7.00335 11.3265L3.47366 13.8909C3.03644 14.2086 2.44816 13.7812 2.61517 13.2672L3.96339 9.1178C4.03807 8.88794 3.95625 8.63612 3.76072 8.49406L0.231038 5.9296C-0.206185 5.61193 0.0185193 4.92037 0.558957 4.92037H4.92188C5.16357 4.92037 5.37778 4.76474 5.45247 4.53488L6.80068 0.385489Z"
+                            fill="#f6f6f6"
+                          />
+                        </svg>
+                        <p class="food-rating-figure">4.2</p>
+                      </div>
+                      <div class="food-rating-status flex-sm">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.66211"
+                            y="1"
+                            width="18"
+                            height="18"
+                            rx="3"
+                            stroke="#EA4335"
+                            stroke-width="2"
+                          />
+                          <circle cx="10.6621" cy="10" r="5" fill="#EA4335" />
+                        </svg>
+                        <p class="foot-rating-status-p">Bestseller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="food-name text-normal">French Fries</p>
+                  <p class="food-price text-sl-dark">₹250</p>
+                  <div class="food-add-btn-container flex-right container">
+                    <div class="incre-decre-btn flex">
+                      <button class="decrement-btn btn">-</button>
+                      <p class="basket-item-count text-normal">2</p>
+                      <button class="increment-btn btn">+</button>
+                   </div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- food sidebar -->
+          <div class="food-sidebar flex-column">
+            <!-- basket sidebar top -->
+            <div class="food-sidebar-top flex-column">
+              <div class="flex-column">
+                <div class="flex-between">
+                  <div class="basket-sidebar-address flex">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.1834 7.54158C16.3084 3.69159 12.9501 1.95825 10.0001 1.95825C10.0001 1.95825 10.0001 1.95825 9.99175 1.95825C7.05008 1.95825 3.68341 3.68325 2.80841 7.53325C1.83341 11.8333 4.46675 15.4749 6.85008 17.7666C7.73341 18.6166 8.86675 19.0416 10.0001 19.0416C11.1334 19.0416 12.2667 18.6166 13.1417 17.7666C15.5251 15.4749 18.1584 11.8416 17.1834 7.54158ZM10.0001 11.7166C8.55008 11.7166 7.37508 10.5416 7.37508 9.09159C7.37508 7.64158 8.55008 6.46658 10.0001 6.46658C11.4501 6.46658 12.6251 7.64158 12.6251 9.09159C12.6251 10.5416 11.4501 11.7166 10.0001 11.7166Z" fill="#1B1B1B"/>
+                    </svg>  
+                    <p class="basket-sidebar-address text-md">Home</p>
+                  </div>
+                  <div class="basket-address-arrow">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.49761 6.68245C2.49761 6.53995 2.55011 6.39745 2.66261 6.28495C2.88011 6.06745 3.24011 6.06745 3.45761 6.28495L8.34761 11.175C8.70761 11.535 9.29261 11.535 9.65261 11.175L14.5426 6.28495C14.7601 6.06745 15.1201 6.06745 15.3376 6.28495C15.5551 6.50245 15.5551 6.86245 15.3376 7.07995L10.4476 11.97C10.0651 12.3525 9.54761 12.57 9.00011 12.57C8.45261 12.57 7.93511 12.36 7.55261 11.97L2.66261 7.07995C2.55761 6.96745 2.49761 6.82495 2.49761 6.68245Z" fill="#1B1B1B"/>
+                    </svg>  
+                  </div>
+                </div>
+                
+                <div class="food-sidebar-choice-rating flex">
+                  <p class="basket-address-detail text-sm">
+                    RK Residency, 9th F Main, BTM Layout, Bengaluru... 
+                  </p>
+                </div>
+              </div>
+              
+              <a href="#" class="text-accent">Add more location</a>
+            </div>
+
+            <!-- basket sidebar payment summary -->
+            <div class="food-sidebar-payment-summary">
+              <p class="food-sidebar-summary-title text-normal">
+                Payment summary
+              </p>
+              <div class="food-sidebar-summary-container flex-column">
+                <div
+                  class="food-sidebar-basket-total flex-between food-sidebar-summary-item"
+                >
+                  <p class="food-sidebar-basket-total-p text-sl-dark">
+                    Basket total
+                  </p>
+                  <p class="food-sidebar-basket-price text-sl">₹0.00</p>
+                </div>
+                <div
+                  class="food-sidebar-delivery-charge flex-between food-sidebar-summary-item"
+                >
+                  <p class="food-sidebar-delivery-charge-p text-sl-dark">
+                    Delivery charge (0.14km)
+                  </p>
+                  <p class="food-sidebar-delivery-price text-sl">₹10.00</p>
+                </div>
+                <div
+                  class="food-sidebar-gst-inclusivity flex-between food-sidebar-summary-item"
+                >
+                  <p class="food-sidebar-gst-p text-sl-dark">
+                    0% GST Inclusive
+                  </p>
+                  <p class="food-sidebar-gst-price text-accent-sm">₹0.00</p>
+                </div>
+                <div
+                  class="food-sidebar-platform-fee flex-between food-sidebar-summary-item"
+                >
+                  <p class="food-sidebar-platform-p text-sl-dark">
+                    Platform fee (5% exclusive)
+                  </p>
+                  <p class="food-sidebar-platform-price text-sl">₹12.43</p>
+                </div>
+              </div>
+              <div class="food-sidebar-payment-total flex-between">
+                <p class="food-sidebar-total-p text-normal">Total amount</p>
+                <p class="food-sidebar-total-price text-normal">₹24.43</p>
+              </div>
+              <div class="food-sidebar-view-basket flex-between btn">
+                <div class="food-sidebar-view-container">
+                  <p class="food-sidebar-view-p text-normal">Proceed to pay</p>
+                </div>
+                <div class="food-sidebar-view-items flex-sm">
+                  <p class="food-sidebar-items-price text-sl">₹254.23</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- basket delivery distance and time -->
+            <div class="food-sidebar-restaurant-info flex-center">
+              <p class="food-sidebar-restaurant-distance text-sl-dark">
+                Delivery time is 20 mins (@ 0.14km @ 40km/hr)
+              </p>
+            </div>
+
+            <!-- basket delivery type -->
+            <div class="food-sidebar-order-container">
+              <div class="food-sidebar-order-delivery flex-column-center">
+                <div
+                  class="food-sidebar-delivery-content container flex-between"
+                >
+                  <p class="food-sidebar-order-p text-sl-dark">Order type</p>
+                  <div class="food-sidebar-delivery-dropdown btn flex">
+                    <p class="text-sl-dark">Delivery</p>
+                    <svg
+                      width="18"
+                      height="19"
+                      viewBox="0 0 18 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.49688 7.18269C2.49688 7.04019 2.54937 6.89769 2.66187 6.78519C2.87937 6.56769 3.23938 6.56769 3.45688 6.78519L8.34687 11.6752C8.70687 12.0352 9.29187 12.0352 9.65187 11.6752L14.5419 6.7852C14.7594 6.5677 15.1194 6.5677 15.3369 6.7852C15.5544 7.0027 15.5544 7.36269 15.3369 7.58019L10.4469 12.4702C10.0644 12.8527 9.54687 13.0702 8.99937 13.0702C8.45187 13.0702 7.93437 12.8602 7.55187 12.4702L2.66187 7.58019C2.55688 7.46769 2.49688 7.32519 2.49688 7.18269Z"
+                        fill="#1B1B1B"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="food-sidebar-delivery-list">
+                  <a class="food-sidebar-delivery-item active flex-between btn">
+                    <p class="text-sl-dark">Delivery</p>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0C4.49 0 0 4.49 0 10C0 15.51 4.49 20 10 20C15.51 20 20 15.51 20 10C20 4.49 15.51 0 10 0ZM14.78 7.7L9.11 13.37C8.97 13.51 8.78 13.59 8.58 13.59C8.38 13.59 8.19 13.51 8.05 13.37L5.22 10.54C4.93 10.25 4.93 9.77 5.22 9.48C5.51 9.19 5.99 9.19 6.28 9.48L8.58 11.78L13.72 6.64C14.01 6.35 14.49 6.35 14.78 6.64C15.07 6.93 15.07 7.4 14.78 7.7Z"
+                        fill="#1B1B1B"
+                      />
+                    </svg>
+                  </a>
+                  <a class="food-sidebar-delivery-item flex-between btn">
+                    <p class="text-sl-dark">Take away</p>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0C4.49 0 0 4.49 0 10C0 15.51 4.49 20 10 20C15.51 20 20 15.51 20 10C20 4.49 15.51 0 10 0ZM14.78 7.7L9.11 13.37C8.97 13.51 8.78 13.59 8.58 13.59C8.38 13.59 8.19 13.51 8.05 13.37L5.22 10.54C4.93 10.25 4.93 9.77 5.22 9.48C5.51 9.19 5.99 9.19 6.28 9.48L8.58 11.78L13.72 6.64C14.01 6.35 14.49 6.35 14.78 6.64C15.07 6.93 15.07 7.4 14.78 7.7Z"
+                        fill="#1B1B1B"
+                      />
+                    </svg>
+                  </a>
+                  <a class="food-sidebar-delivery-item flex-between btn">
+                    <p class="text-sl-dark">Dine in</p>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0C4.49 0 0 4.49 0 10C0 15.51 4.49 20 10 20C15.51 20 20 15.51 20 10C20 4.49 15.51 0 10 0ZM14.78 7.7L9.11 13.37C8.97 13.51 8.78 13.59 8.58 13.59C8.38 13.59 8.19 13.51 8.05 13.37L5.22 10.54C4.93 10.25 4.93 9.77 5.22 9.48C5.51 9.19 5.99 9.19 6.28 9.48L8.58 11.78L13.72 6.64C14.01 6.35 14.49 6.35 14.78 6.64C15.07 6.93 15.07 7.4 14.78 7.7Z"
+                        fill="#1B1B1B"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- basket requests -->
+            
+            <div class="food-sidebar-btn-space">
+              <div class="food-sidebar-menu flex-center">
+                <div class="food-sidebar-menu-content flex-column-center">
+                  <div class="food-sidebar-menu-list flex-column">
+                    <div class="food-sidebar-menu-item flex-between">
+                      <p class="food-sidebar-food text-normal">
+                        Rolls &amp Fry
+                      </p>
+                      <p class="food-sidebar-food-left text-normal">12</p>
+                    </div>
+                    <div class="food-sidebar-menu-item flex-between">
+                      <p class="food-sidebar-food text-normal">Roti</p>
+                      <p class="food-sidebar-food-left text-normal">2</p>
+                    </div>
+                    <div class="food-sidebar-menu-item flex-between">
+                      <p class="food-sidebar-food text-normal">Rice Combo</p>
+                      <p class="food-sidebar-food-left text-normal">6</p>
+                    </div>
+                    <div class="food-sidebar-menu-item flex-between">
+                      <p class="food-sidebar-food text-normal">Biryani</p>
+                      <p class="food-sidebar-food-left text-normal">2</p>
+                    </div>
+                    <div class="food-sidebar-menu-item flex-between">
+                      <p class="food-sidebar-food text-normal">Desserts</p>
+                      <p class="food-sidebar-food-left text-normal">8</p>
+                    </div>
+                  </div>
+                  <div class="food-sidebar-menu-btn btn flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="24"
+                      viewBox="0 0 17 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M6.05078 16.9471H10.0943C10.0943 15.8222 9.18223 14.9102 8.05734 14.9102C6.93245 14.9102 6.05078 15.8222 6.05078 16.9471Z"
+                        fill="#1B1B1B"
+                      />
+                      <path
+                        d="M15.1708 5.78906H1.00328C0.456037 5.78906 0 6.2451 0 6.79234V22.9968C0 23.5441 0.456037 24.0001 1.00328 24.0001H15.2012C15.7485 24.0001 16.2045 23.5441 16.2045 22.9968V6.79234C16.2045 6.2451 15.7485 5.78906 15.1708 5.78906ZM4.04353 18.5581V16.9468C4.04353 15.2442 5.10761 13.7849 6.59733 13.1769C6.87095 13.0552 7.08377 12.812 7.08377 12.508V11.8696C7.08377 11.3223 7.53981 10.8663 8.08705 10.8663C8.63429 10.8663 9.09033 11.3223 9.09033 11.9304V12.508C9.09033 12.812 9.27275 13.0856 9.57677 13.1769C11.0665 13.7849 12.1306 15.2138 12.1306 16.9468V18.5581C12.1306 18.7709 11.9482 18.9533 11.7353 18.9533H4.43876C4.22594 18.9533 4.04353 18.7709 4.04353 18.5581Z"
+                        fill="#1B1B1B"
+                      />
+                      <path
+                        d="M2.5531 4.2688H10.0017C10.5793 4.2688 10.7618 3.44793 10.2145 3.23511L2.76592 0.042856C2.40109 -0.109156 2.00586 0.164466 2.00586 0.529295V3.72155C2.00586 4.02558 2.24908 4.2688 2.5531 4.2688Z"
+                        fill="#1B1B1B"
+                      />
+                    </svg>
+                    <p class="food-sidebar-menu-title text-normal">Food menu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- footer section -->
+
       <footer id="footer">
         <div class="footer-container flex-between">
           <div class="footer-logo">
@@ -1048,7 +1128,7 @@
     </main>
     <!-- floating mobile nav -->
     <nav class="mobile-nav flex-between">
-      <a class="mobile-nav-link mobile-nav-home flex-column-center">
+      <a href="#" class="mobile-nav-link flex-column-center-center">
         <svg
           class="home-icon"
           width="24"
@@ -1059,23 +1139,20 @@
         >
           <path
             d="M12.0001 2.08209C12.6495 2.08209 13.2707 2.13856 13.8918 2.2515C13.8918 2.1668 13.9201 2.08209 13.9201 1.99739C13.9201 0.952684 13.073 0.0773926 12.0001 0.0773926C10.9271 0.0773926 10.0801 0.924449 10.0801 1.99739C10.0801 2.08209 10.0801 2.1668 10.1083 2.2515C10.7295 2.13856 11.3507 2.08209 12.0001 2.08209Z"
-            fill="#8F949B"
+            fill="#FF1D23"
           />
           <path
             d="M13.9062 3.18601C13.2851 3.07307 12.6639 3.0166 12.0145 3.0166C11.3651 3.0166 10.7439 3.07307 10.1227 3.18601C5.26628 4.08954 1.5957 8.32482 1.5957 13.4354H22.405C22.4333 8.32482 18.7627 4.0613 13.9062 3.18601ZM12.438 4.82365C16.1086 4.82365 20.1462 8.18364 20.1462 11.8542H16.4192C16.4192 8.18364 8.76744 4.82365 12.438 4.82365Z"
-            fill="#8F949B"
+            fill="#FF1D23"
           />
           <path
             d="M0 14.2007L0.847056 15.923H23.1529L23.9999 14.2007H0Z"
-            fill="#8F949B"
+            fill="#FF1D23"
           />
         </svg>
-        <p class="text-sm mobile-nav-link-p">Home</p>
+        <p class="text-sm mobile-nav-link-p active">Home</p>
       </a>
-      <div
-        href="#"
-        class="mobile-nav-link mobile-nav-search flex-column-center"
-      >
+      <a href="#" class="mobile-nav-link flex-column-center">
         <svg
           width="20"
           height="20"
@@ -1090,11 +1167,8 @@
           />
         </svg>
         <p class="text-sm mobile-nav-link-p">Search</p>
-      </div>
-      <a
-        href="#"
-        class="mobile-nav-link mobile-navp-favorites flex-column-center"
-      >
+      </a>
+      <a href="#" class="mobile-nav-link flex-column-center">
         <svg
           width="24"
           height="24"
@@ -1109,7 +1183,7 @@
         </svg>
         <p class="text-sm mobile-nav-link-p">Favorites</p>
       </a>
-      <a class="mobile-nav-link mobile-nav-basket active flex-column-center">
+      <a class="mobile-nav-link flex-column-center">
         <svg
           width="24"
           height="24"
@@ -1129,11 +1203,10 @@
         <p class="text-sm mobile-nav-link-p">Basket</p>
       </a>
     </nav>
-
     <!-- floating mobile address -->
     <div class="mobile-address-list flex-column">
-      <div class="mobile-address-list-head flex-between">
-        <p class="mobile-list-title text-md-light">Choose location</p>
+      <div class="address-list-head flex-between">
+        <p class="list-title text-md-light">Choose location</p>
         <div class="mobile-address-list-close btn flex-center">
           <svg
             width="32"
@@ -1149,13 +1222,34 @@
           </svg>
         </div>
       </div>
-      <div class="mobile-address-list-item">
-        <a href="#" class="mobile-address-list-link active flex-between">
-          <div class="mobile-address-location flex-column">
-            <p class="mobile-address-list-title text-normal">Home</p>
-            <p class="mobile-address-list-location text-sl">
+      <div class="address-list-item">
+        <a href="#" class="address-list-link flex-between">
+          <div class="address-location flex-column">
+            <p class="address-list-title active text-normal">Home</p>
+            <p class="address-list-location text-sl">
               9th F main, BTM Layout 1st,<br />
-              Bengaluru
+              Bengaluru - 560029
+            </p>
+          </div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+              fill="#FF1D23"
+            />
+          </svg>
+        </a>
+        <a href="#" class="address-list-link flex-between">
+          <div class="address-location flex-column">
+            <p class="address-list-title text-normal">Office</p>
+            <p class="address-list-location text-sl">
+              9th F main, BTM Layout 1st,<br />
+              Bengaluru - 560029
             </p>
           </div>
           <svg
@@ -1171,33 +1265,12 @@
             />
           </svg>
         </a>
-        <a href="#" class="mobile-address-list-link flex-between">
-          <div class="mobile-address-location flex-column">
-            <p class="mobile-address-list-title text-normal">Office</p>
-            <p class="mobile-address-list-location text-sl">
+        <a href="#" class="address-list-link flex-between">
+          <div class="address-location flex-column">
+            <p class="address-list-title text-normal">Work</p>
+            <p class="address-list-location text-sl">
               9th F main, BTM Layout 1st,<br />
-              Bengaluru
-            </p>
-          </div>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-              fill="#5C5F6470"
-            />
-          </svg>
-        </a>
-        <a href="#" class="mobile-address-list-link flex-between">
-          <div class="mobile-address-location flex-column">
-            <p class="mobile-address-list-title text-normal">Work</p>
-            <p class="mobile-address-list-location text-sl">
-              9th F main, BTM Layout 1st,<br />
-              Bengaluru
+              Bengaluru - 560029
             </p>
           </div>
           <svg
@@ -1215,8 +1288,5 @@
         </a>
       </div>
     </div>
-
-    <script src="../js/food-items.js"></script>
-    <script src="../js/restaurant.js"></script>
   </body>
 </html>

@@ -55,8 +55,10 @@
   border-radius: 8px;
   background: #fff;
   padding: var(--ws-3);
-  width: 100%;
+  width: minmax(1fr, 100%);
+  position: relative;
 }
+
 
 .food-items-content {
   padding-top: var(--ws-large);
@@ -218,9 +220,9 @@
   padding: var(--ws-2) var(--ws-3);
 }
 
-.food-sidebar-restaurant-info {
+/* .food-sidebar-restaurant-info {
   justify-content: space-between;
-}
+} */
 
 .food-sidebar-slider {
   position: relative;
@@ -465,6 +467,13 @@
   gap: var(--ws-reg);
 }
 
+@media screen and (max-width: 1124px) {
+  #footer {
+    height: fit-content;
+  }
+  .footer-container {display: flex; }
+}
+
 
 @media screen and (max-width: 1115px) {
   .food-items-veg-carn {
@@ -513,6 +522,7 @@
     padding: 0px;
     background-color: transparent;
     width: 50%;
+    z-index: var(--z-2);
   }
 
 
@@ -540,6 +550,11 @@
   .food-sidebar {
     width: 100%;
   }
+
+  #footer {
+    height: 15vh;
+  }
+  .footer-container {display: none; }
 }
 
 @media screen and (max-width: 840px) {

@@ -1,4 +1,31 @@
-.basket-container {
-    padding: var(--ws-4) var(--ws-auto);
-    width: 100%;
+@import url("style.css");
+@import url("menu-sidebar.css");
+
+
+.basket-section {
+    padding-top: var(--ws-large);
+}
+
+.food-items-sidebar {
+    padding-top: var(--ws-4);
+}
+
+.food-items-content {
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(15rem, 1fr));
+}
+
+.food-sidebar-restaurant-info {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: transparent;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 750px) {
+    .food-items-content {
+        grid-template-columns: minmax(5rem, 1fr);
+    }
 }
